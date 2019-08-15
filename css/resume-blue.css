@@ -135,7 +135,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: rgba(0, 51, 102, 0.2) !important;
+  background-color: rgb(204, 230, 255) !important;
 }
 
 .text-primary {
@@ -153,3 +153,13 @@ a:hover, a:focus, a:active {
 img {
   max-width:80%;
 }
+
+button {
+	background-color: rgba(255, 255, 255, 0);
+	border-color: rgb(204, 230, 255);
+	padding: 10px 24px; 
+	border-radius: 12px; 
+}
+ button:hover, button:focus, button:active {
+	 border-color: rgba(0, 51, 102, 1); 
+ }
