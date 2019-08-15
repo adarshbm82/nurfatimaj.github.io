@@ -78,6 +78,7 @@ h2 {
     flex-direction: column;
     width: 17rem;
     height: 100vh;
+	border-color: rgba(52, 58, 64, 0.5); 
   }
   #sideNav .navbar-brand {
     display: flex;
@@ -135,7 +136,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: rgb(204, 230, 255) !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 .text-primary {
