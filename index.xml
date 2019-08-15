@@ -66,10 +66,10 @@
       <description> CV_{{ .Site.Params.firstName }}_{{ .Site.Params.lastName }}    {{ .Site.Params.firstName }} {{ .Site.Params.lastName }} Contact Information {{ .Site.Params.university }}
 {{ .Site.Params.address }}
 {{ .Site.Params.city }}, {{ .Site.Params.postcode }}, {{ .Site.Params.country }}
-{{ .Site.Params.phone }}
-{{ .Site.Params.email }}
-{{ $baseUrl := .Site.BaseURL }} {{ $baseUrl }}
-    </description>
+ {{ .Site.Params.phone }}
+Email: {{ .Site.Params.email }}
+{{ $baseUrl := .Site.BaseURL }} Personal page: {{ $baseUrl }}
+ Research Interests {{ range .Params.research_interests }} {{ . }} {{ end }}   Education    </description>
     </item>
     
     <item>
