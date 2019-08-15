@@ -63,7 +63,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://labuve.github.io/cv_print_version/</guid>
-      <description> CV_{{ .Site.Params.firstName }}_{{ .Site.Params.lastName }}    {{ partial &#34;print_version/about.html&#34; . }} {{ partial &#34;print_version/education.html&#34; . }} {{ partial &#34;portfolio/experience.html&#34; . }}  </description>
+      <description> CV_{{ .Site.Params.firstName }}_{{ .Site.Params.lastName }}    {{ partial &#34;print_version/about.html&#34; . }} {{ partial &#34;print_version/education.html&#34; . }} {{ partial &#34;print_version/experience.html&#34; . }}  </description>
     </item>
     
     <item>
