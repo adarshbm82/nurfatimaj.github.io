@@ -58,6 +58,21 @@
     </item>
     
     <item>
+      <title></title>
+      <link>https://labuve.github.io/cv_print_version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://labuve.github.io/cv_print_version/</guid>
+      <description> CV_{{ .Site.Params.firstName }}_{{ .Site.Params.lastName }}    {{ .Site.Params.firstName }} {{ .Site.Params.lastName }} Contact Information {{ .Site.Params.university }}
+{{ .Site.Params.address }}
+{{ .Site.Params.city }}, {{ .Site.Params.postcode }}, {{ .Site.Params.country }}
+{{ .Site.Params.phone }}
+{{ .Site.Params.email }}
+{{ $baseUrl := .Site.BaseURL }} {{ $baseUrl }}
+    </description>
+    </item>
+    
+    <item>
       <title>Atlassian Marketplace Plugins</title>
       <link>https://labuve.github.io/projects/creations/marketplace/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
