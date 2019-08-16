@@ -1,13 +1,14 @@
 
 .pvClearFix:after { content: ""; display: table; clear: both; }
 
-body { width: 270mm; margin: auto; }
+body { width: 270mm; margin: auto; font-size: 22px; font-family: 'Open Sans', serif; }
 
 h1 { text-align: center; font-size: 32px; font-family: "Cinzel"; font-weight: bolder; }
 h2 { font-size: 20px; text-transform: uppercase; font-family: "Cinzel"; font-weight: lighter; margin-top: 36px; }
-li { margin: 14px 0; }
+td {min-width: 150px; }
 
-.col50 { float: left; width: 45%; line-height:1px; }
+#contact { line-height: 1; }
+.col50 { float: left; width: 45%; }
 .pubtitle { font-weight: bolder; margin-bottom: 0; }
 .pubcoauthors { font-style: italic; margin: 0; }
 .pubabstract { margin-top: 0; }
