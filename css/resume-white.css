@@ -134,6 +134,7 @@ section.resume-section .resume-item .resume-date {
     padding-bottom: 3rem !important;
   }
 }
+.pr-6 { padding-right: 6rem !important; }
 
 .bg-primary {
   background-color: rgb(255, 255, 255) !important;
