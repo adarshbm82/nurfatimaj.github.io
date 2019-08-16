@@ -155,6 +155,10 @@ img {
   max-width:80%;
 }
 
+#qr-code {
+	width: 150px;
+}
+
 .d-lg-block {
 	text-align: center; 
 }
