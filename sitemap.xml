@@ -35,58 +35,6 @@
   </url>
   
   <url>
-    <loc>https://labuve.github.io/blog/</loc>
-    <lastmod>2019-08-17T17:25:46+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://labuve.github.io/categories/</loc>
-    <lastmod>2019-08-17T17:25:46+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://labuve.github.io/blog/genetics/genetics-side-effects/</loc>
-    <lastmod>2019-08-17T17:25:46+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://labuve.github.io/tags/</loc>
-    <lastmod>2019-08-17T17:25:46+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://labuve.github.io/tags/fun-facts/</loc>
-    <lastmod>2019-08-17T17:25:46+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://labuve.github.io/categories/genetics/</loc>
-    <lastmod>2019-08-17T17:25:46+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://labuve.github.io/blog/automatic-documentation/</loc>
-    <lastmod>2019-08-17T16:33:42+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://labuve.github.io/tags/documentation/</loc>
-    <lastmod>2019-08-17T16:33:42+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://labuve.github.io/tags/software/</loc>
-    <lastmod>2019-08-17T16:33:42+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://labuve.github.io/tags/atlassian-ecosystem/</loc>
     <lastmod>2018-02-11T12:41:05-05:00</lastmod>
     <priority>0</priority>
@@ -104,6 +52,12 @@
   </url>
   
   <url>
+    <loc>https://labuve.github.io/tags/bash/shell/</loc>
+    <lastmod>2018-02-11T12:41:05-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://labuve.github.io/tags/devops/</loc>
     <lastmod>2018-02-11T12:41:05-05:00</lastmod>
     <priority>0</priority>
@@ -116,25 +70,25 @@
   </url>
   
   <url>
+    <loc>https://labuve.github.io/tags/python/</loc>
+    <lastmod>2018-02-11T12:41:05-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://labuve.github.io/tags/rest-apis/</loc>
     <lastmod>2018-02-11T12:41:05-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://labuve.github.io/tags/bash/shell/</loc>
+    <loc>https://labuve.github.io/tags/</loc>
     <lastmod>2018-02-11T12:41:05-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://labuve.github.io/tags/monit/</loc>
-    <lastmod>2018-02-11T12:41:05-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://labuve.github.io/tags/python/</loc>
     <lastmod>2018-02-11T12:41:05-05:00</lastmod>
     <priority>0</priority>
   </url>
@@ -208,6 +162,11 @@
   
   <url>
     <loc>https://labuve.github.io/tags/bitbucket/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://labuve.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
