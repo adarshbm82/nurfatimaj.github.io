@@ -50,19 +50,19 @@
     
     <item>
       <title>Genetics side effects: curious things I learned trying to fix data issues</title>
-      <link>https://labuve.github.io/blog/genetics/genetics_side_effects/</link>
+      <link>https://labuve.github.io/blog/genetics/genetics-side-effects/</link>
       <pubDate>Sat, 17 Aug 2019 17:25:46 +0600</pubDate>
       
-      <guid>https://labuve.github.io/blog/genetics/genetics_side_effects/</guid>
+      <guid>https://labuve.github.io/blog/genetics/genetics-side-effects/</guid>
       <description> Randomization is in the blood of all female species (human or not). Despite having two types of X chromosomes, every cell shuts down one of them randomly. This is the reason some female cats can have patchy fur and some women have patches of skin unable to sweat.  </description>
     </item>
     
     <item>
       <title>Automatic documentation</title>
-      <link>https://labuve.github.io/blog/automatic_documentation/</link>
+      <link>https://labuve.github.io/blog/automatic-documentation/</link>
       <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
       
-      <guid>https://labuve.github.io/blog/automatic_documentation/</guid>
+      <guid>https://labuve.github.io/blog/automatic-documentation/</guid>
       <description>Sounds like automatic differentiation, but it is far less complicated. It is a program that reads in your program (for example, a do file) and automatically generates documentation for it.
 Why do I need such? At the beginning of PhD I used to have at most one project at a time. Keeping track of things was easy. Along the way, I accumulated a portfolio of projects. For each of them I write tons of codes (partly because my programmer sister has taught me that having one big file with everything is bad).</description>
     </item>
@@ -78,10 +78,10 @@ Why do I need such? At the beginning of PhD I used to have at most one project a
     
     <item>
       <title></title>
-      <link>https://labuve.github.io/cv_print_version/</link>
+      <link>https://labuve.github.io/cv-print-version/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://labuve.github.io/cv_print_version/</guid>
+      <guid>https://labuve.github.io/cv-print-version/</guid>
       <description> CV_{{ .Site.Params.firstName }}_{{ .Site.Params.lastName }}    {{ partial &#34;print_version/about.html&#34; . }} {{ partial &#34;print_version/education.html&#34; . }} {{ partial &#34;print_version/experience.html&#34; . }} {{ partial &#34;print_version/publications.html&#34; . }} {{ partial &#34;print_version/seminars.html&#34; . }} {{ partial &#34;print_version/skills.html&#34; . }} {{ partial &#34;print_version/awards.html&#34; . }}  </description>
     </item>
     

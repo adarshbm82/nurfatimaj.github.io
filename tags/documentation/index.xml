@@ -13,10 +13,10 @@
     
     <item>
       <title>Automatic documentation</title>
-      <link>https://labuve.github.io/blog/automatic_documentation/</link>
+      <link>https://labuve.github.io/blog/automatic-documentation/</link>
       <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
       
-      <guid>https://labuve.github.io/blog/automatic_documentation/</guid>
+      <guid>https://labuve.github.io/blog/automatic-documentation/</guid>
       <description>Sounds like automatic differentiation, but it is far less complicated. It is a program that reads in your program (for example, a do file) and automatically generates documentation for it.
 Why do I need such? At the beginning of PhD I used to have at most one project at a time. Keeping track of things was easy. Along the way, I accumulated a portfolio of projects. For each of them I write tons of codes (partly because my programmer sister has taught me that having one big file with everything is bad).</description>
     </item>
