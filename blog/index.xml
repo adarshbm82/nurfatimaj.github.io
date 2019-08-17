@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Nurfatima Jandarova</title>
+    <link>https://labuve.github.io/blog/</link>
+    <description>Recent content in Blogs on Nurfatima Jandarova</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Aug 2019 17:25:46 +0600</lastBuildDate>
+    
+	<atom:link href="https://labuve.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Genetics side effects: curious things I learned trying to fix data issues</title>
+      <link>https://labuve.github.io/blog/genetics/genetics_side_effects/</link>
+      <pubDate>Sat, 17 Aug 2019 17:25:46 +0600</pubDate>
+      
+      <guid>https://labuve.github.io/blog/genetics/genetics_side_effects/</guid>
+      <description> Randomization is in the blood of all female species (human or not). Despite having two types of X chromosomes, every cell shuts down one of them randomly. This is the reason some female cats can have patchy fur and some women have patches of skin unable to sweat.  </description>
+    </item>
+    
+    <item>
+      <title>Automatic documentation</title>
+      <link>https://labuve.github.io/blog/automatic_documentation/</link>
+      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
+      
+      <guid>https://labuve.github.io/blog/automatic_documentation/</guid>
+      <description>Sounds like automatic differentiation, but it is far less complicated. It is a program that reads in your program (for example, a do file) and automatically generates documentation for it.
+Why do I need such? At the beginning of PhD I used to have at most one project at a time. Keeping track of things was easy. Along the way, I accumulated a portfolio of projects. For each of them I write tons of codes (partly because my programmer sister has taught me that having one big file with everything is bad).</description>
+    </item>
+    
+  </channel>
+</rss>

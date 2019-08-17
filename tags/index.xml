@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Nurfatima Jandarova</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Feb 2018 12:41:05 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 17 Aug 2019 17:25:46 +0600</lastBuildDate>
     
 	<atom:link href="https://labuve.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>fun facts</title>
+      <link>https://labuve.github.io/tags/fun-facts/</link>
+      <pubDate>Sat, 17 Aug 2019 17:25:46 +0600</pubDate>
+      
+      <guid>https://labuve.github.io/tags/fun-facts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>documentation</title>
+      <link>https://labuve.github.io/tags/documentation/</link>
+      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
+      
+      <guid>https://labuve.github.io/tags/documentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>https://labuve.github.io/tags/software/</link>
+      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
+      
+      <guid>https://labuve.github.io/tags/software/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Atlassian Ecosystem</title>
@@ -66,7 +93,7 @@
     </item>
     
     <item>
-      <title>Rest APIs</title>
+      <title>REST APIs</title>
       <link>https://labuve.github.io/tags/rest-apis/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
@@ -201,7 +228,7 @@
     </item>
     
     <item>
-      <title>JavaScript</title>
+      <title>Javascript</title>
       <link>https://labuve.github.io/tags/javascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
