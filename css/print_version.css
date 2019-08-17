@@ -6,7 +6,6 @@ body { width: 220mm; margin: auto; font-size: 22px; font-family: 'Open Sans', se
 h1 { text-align: center; font-size: 32px; font-family: "Cinzel"; font-weight: bolder; }
 h2 { font-size: 20px; text-transform: uppercase; font-family: "Cinzel"; font-weight: lighter; margin-top: 36px; }
 td {min-width: 100px; vertical-align: top; }
-td.wide {width: 200px; }
 
 #contact { line-height: 1; }
 .pubtitle { font-weight: bolder; margin-bottom: 0; }
