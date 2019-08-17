@@ -57,15 +57,6 @@
     </item>
     
     <item>
-      <title>Bash/Shell</title>
-      <link>https://labuve.github.io/tags/bash/shell/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
-      
-      <guid>https://labuve.github.io/tags/bash/shell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>DevOps</title>
       <link>https://labuve.github.io/tags/devops/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
@@ -84,20 +75,20 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://labuve.github.io/tags/python/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
-      
-      <guid>https://labuve.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>REST APIs</title>
+      <title>Rest APIs</title>
       <link>https://labuve.github.io/tags/rest-apis/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
       <guid>https://labuve.github.io/tags/rest-apis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bash/shell</title>
+      <link>https://labuve.github.io/tags/bash/shell/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://labuve.github.io/tags/bash/shell/</guid>
       <description></description>
     </item>
     
@@ -107,6 +98,15 @@
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
       <guid>https://labuve.github.io/tags/monit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://labuve.github.io/tags/python/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://labuve.github.io/tags/python/</guid>
       <description></description>
     </item>
     
