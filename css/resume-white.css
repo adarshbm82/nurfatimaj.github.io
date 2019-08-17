@@ -144,6 +144,8 @@ section.resume-section .resume-item .resume-date {
   color: rgba(0, 51, 102, 1) !important;
 }
 
+#about_content { max-width: 50%; }
+
 a {
   color: rgba(0, 51, 102, 0.5);
 }
