@@ -67,6 +67,11 @@ h2 {
   font-weight: 600;
   text-transform: uppercase;
 }
+.nav-title {
+	font-weight: 600; 
+	text-transform: uppercase; 
+	color: rgba(0, 51, 102, 1) !important;
+}
 
 @media (min-width: 992px) {
   #sideNav {
@@ -162,7 +167,7 @@ img {
 	width: 150px;
 }
 
-.d-lg-block {
+.center {
 	text-align: center; 
 }
 
