@@ -163,6 +163,10 @@ img {
   max-width:80%;
 }
 
+.img-credit {
+	font-size: 10px; 
+}
+
 #qr-code {
 	width: 150px;
 }
