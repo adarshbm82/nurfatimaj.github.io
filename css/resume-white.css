@@ -149,7 +149,7 @@ section.resume-section .resume-item .resume-date {
   color: rgba(0, 51, 102, 1) !important;
 }
 
-#about_card { min-width: 50%; border-right-width: thick; }
+#about_card { min-width: 45%; border-right-width: thick; }
 
 a {
   color: rgba(0, 51, 102, 0.5);
