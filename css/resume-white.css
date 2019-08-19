@@ -139,7 +139,7 @@ section.resume-section .resume-item .resume-date {
     padding-bottom: 3rem !important;
   }
 }
-.pr-6 { padding-right: 6rem !important; }
+
 
 .bg-primary {
   background-color: rgb(255, 255, 255) !important;
@@ -149,7 +149,7 @@ section.resume-section .resume-item .resume-date {
   color: rgba(0, 51, 102, 1) !important;
 }
 
-#about_card { min-width: 50%; }
+#about_card { min-width: 50%; border-right-width: thick; }
 
 a {
   color: rgba(0, 51, 102, 0.5);
