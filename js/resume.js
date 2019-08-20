@@ -34,12 +34,12 @@
   $(window).scroll(function() {
 	  var scroll = $(window).scrollTop();
 	  if (scroll >= 800) {
-		  $('.nav-title').removeClass('d-lg-none');
-		  $('.nav-title').addClass('d-lg-block');
+		  $('.nav-title').removeClass('d-sm-none');
+		  $('.nav-title').addClass('d-sm-block');
 	  } 
 	  else {
-		  $('.nav-title').addClass('d-lg-none');
-		  $('.nav-title').removeClass('d-lg-block');
+		  $('.nav-title').addClass('d-sm-none');
+		  $('.nav-title').removeClass('d-sm-block');
 	  }
   });
 

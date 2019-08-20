@@ -63,14 +63,15 @@ h2 {
   color: rgba(0, 51, 102, 1);
 }
 
-#sideNav .navbar-nav .nav-item .nav-link {
+#sideNav .navbar-nav .nav-item .nav-link, .navbar-brand {
   font-weight: 600;
   text-transform: uppercase;
 }
-.nav-title {
-	font-weight: 600; 
-	text-transform: uppercase; 
+
+#sideNav .navbar-brand {
 	color: rgba(0, 51, 102, 1) !important;
+	width: 50%; 
+	white-space: normal; 
 }
 
 @media (min-width: 992px) {
