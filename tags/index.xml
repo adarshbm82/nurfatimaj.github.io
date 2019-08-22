@@ -6,10 +6,55 @@
     <description>Recent content in Tags on Nurfatima Jandarova</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Feb 2018 12:41:05 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 22 Aug 2019 20:00:00 +0600</lastBuildDate>
     
 	<atom:link href="https://labuve.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bash script</title>
+      <link>https://labuve.github.io/tags/bash-script/</link>
+      <pubDate>Thu, 22 Aug 2019 20:00:00 +0600</pubDate>
+      
+      <guid>https://labuve.github.io/tags/bash-script/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>documentation</title>
+      <link>https://labuve.github.io/tags/documentation/</link>
+      <pubDate>Thu, 22 Aug 2019 20:00:00 +0600</pubDate>
+      
+      <guid>https://labuve.github.io/tags/documentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://labuve.github.io/tags/git/</link>
+      <pubDate>Thu, 22 Aug 2019 20:00:00 +0600</pubDate>
+      
+      <guid>https://labuve.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://labuve.github.io/tags/markdown/</link>
+      <pubDate>Thu, 22 Aug 2019 20:00:00 +0600</pubDate>
+      
+      <guid>https://labuve.github.io/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>https://labuve.github.io/tags/software/</link>
+      <pubDate>Thu, 22 Aug 2019 20:00:00 +0600</pubDate>
+      
+      <guid>https://labuve.github.io/tags/software/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Atlassian Ecosystem</title>
@@ -201,7 +246,7 @@
     </item>
     
     <item>
-      <title>Javascript</title>
+      <title>JavaScript</title>
       <link>https://labuve.github.io/tags/javascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
