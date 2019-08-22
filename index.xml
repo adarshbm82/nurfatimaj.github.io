@@ -49,15 +49,6 @@
     </item>
     
     <item>
-      <title>Automatic documentation</title>
-      <link>https://labuve.github.io/blog/tech-fun/automatic-documentation/</link>
-      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
-      
-      <guid>https://labuve.github.io/blog/tech-fun/automatic-documentation/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Sounds like automatic differentiation, but it is far less complicated. It is a program that reads in your program (for example, a do file) and automatically generates documentation for it.&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>BOSH release for Bamboo &amp; Remote Agents</title>
       <link>https://labuve.github.io/projects/creations/bosh-agents/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
