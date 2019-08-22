@@ -31,17 +31,37 @@
     $('[data-toggle="tooltip"]').tooltip()
   })
   
-  $(window).scroll(function() {
-	  var scroll = $(window).scrollTop();
-	  if (scroll >= 800) {
-		  $('.nav-title').removeClass('d-sm-none');
-		  $('.nav-title').addClass('d-sm-block');
-	  } 
-	  else {
-		  $('.nav-title').addClass('d-sm-none');
-		  $('.nav-title').removeClass('d-sm-block');
-	  }
-  });
+  function isVisibleInViewport(elem)
+{
+    var y = elem.offsetTop;
+    var height = elem.offsetHeight;
+
+    while ( elem = elem.offsetParent )
+        y += elem.offsetTop;
+
+    var maxHeight = y + height;
+    var isVisible = ( y < ( window.pageYOffset + window.innerHeight ) ) && ( maxHeight >= window.pageYOffset );
+    return isVisible; 
+
+}
+  
+  if($('#about').length > 0) {
+	  $(window).scroll(function() {
+		  var canvas = document.getElementById('about');
+		  if(isVisibleInViewport(canvas)) {
+			  $('.nav-title').addClass('d-sm-none');
+			  $('.nav-title').removeClass('d-sm-block');
+		  }
+		  else {
+			  $('.nav-title').removeClass('d-sm-none');
+			  $('.nav-title').addClass('d-sm-block');
+		  }
+	  });
+  }
+  else {
+	  $('.nav-title').removeClass('d-sm-none');
+	  $('.nav-title').addClass('d-sm-block');
+  }
 
 
 })(jQuery); // End of use strict
