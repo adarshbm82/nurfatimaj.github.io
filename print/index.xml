@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prints on Nurfatima Jandarova</title>
+    <link>https://labuve.github.io/print/</link>
+    <description>Recent content in Prints on Nurfatima Jandarova</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Aug 2019 21:20:52 +0600</lastBuildDate>
+    
+	<atom:link href="https://labuve.github.io/print/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cv Print Version</title>
+      <link>https://labuve.github.io/print/cv-print-version/</link>
+      <pubDate>Thu, 22 Aug 2019 21:20:52 +0600</pubDate>
+      
+      <guid>https://labuve.github.io/print/cv-print-version/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
