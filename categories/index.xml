@@ -6,9 +6,19 @@
     <description>Recent content in Categories on Nurfatima Jandarova</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 17 Aug 2019 16:33:42 +0600</lastBuildDate>
     
 	<atom:link href="https://labuve.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>tech fun</title>
+      <link>https://labuve.github.io/categories/tech-fun/</link>
+      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
+      
+      <guid>https://labuve.github.io/categories/tech-fun/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

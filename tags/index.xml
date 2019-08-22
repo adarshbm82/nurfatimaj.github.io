@@ -6,10 +6,55 @@
     <description>Recent content in Tags on Nurfatima Jandarova</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Feb 2018 12:41:05 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 17 Aug 2019 16:33:42 +0600</lastBuildDate>
     
 	<atom:link href="https://labuve.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bash script</title>
+      <link>https://labuve.github.io/tags/bash-script/</link>
+      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
+      
+      <guid>https://labuve.github.io/tags/bash-script/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>documentation</title>
+      <link>https://labuve.github.io/tags/documentation/</link>
+      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
+      
+      <guid>https://labuve.github.io/tags/documentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://labuve.github.io/tags/git/</link>
+      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
+      
+      <guid>https://labuve.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://labuve.github.io/tags/markdown/</link>
+      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
+      
+      <guid>https://labuve.github.io/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>https://labuve.github.io/tags/software/</link>
+      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
+      
+      <guid>https://labuve.github.io/tags/software/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Atlassian Ecosystem</title>
@@ -26,15 +71,6 @@
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
       <guid>https://labuve.github.io/tags/bosh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bash/Shell</title>
-      <link>https://labuve.github.io/tags/bash/shell/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
-      
-      <guid>https://labuve.github.io/tags/bash/shell/</guid>
       <description></description>
     </item>
     
@@ -57,15 +93,6 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://labuve.github.io/tags/python/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
-      
-      <guid>https://labuve.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>REST APIs</title>
       <link>https://labuve.github.io/tags/rest-apis/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
@@ -75,11 +102,29 @@
     </item>
     
     <item>
+      <title>bash/shell</title>
+      <link>https://labuve.github.io/tags/bash/shell/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://labuve.github.io/tags/bash/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>monit</title>
       <link>https://labuve.github.io/tags/monit/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
       <guid>https://labuve.github.io/tags/monit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://labuve.github.io/tags/python/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://labuve.github.io/tags/python/</guid>
       <description></description>
     </item>
     

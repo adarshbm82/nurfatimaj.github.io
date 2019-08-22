@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145831061-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-145831061-1');
+	</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Automatic documentation</title>
+  <meta property="og:title" content="Automatic documentation" />
+  <meta property="og:image" content="https://labuve.github.io/" />
+  <meta name="description" content="">
+  <meta property="og:description" content="" />
+  <meta name="author" content="Nurfatima Jandarova">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  
+  <link rel="shortcut icon" href="favicon.ico">
+  
+  
+	
+      <link href="/css/resume-white.css" rel="stylesheet">
+    
+  
+  <link href="https://labuve.github.io/css/tweaks.css" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.56.3" />
+  
+   
+  
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">
+    <span class="d-block d-sm-none nav-title">Nurfatima Jandarova</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+      </li>
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
+          </li>
+      
+	  
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#publications">Research</a>
+          </li>
+      
+	  
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
+          </li>
+      
+	  
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#teaching">Teaching</a>
+          </li>
+      
+	  
+      
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#blog">Blog</a>
+          </li>
+      
+	  <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#contacts">Contacts</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid p-0">
+    
+<nav aria-label="breadcrumb">
+  <ol  class="breadcrumb">
+    
+
+
+
+
+
+<li class="breadcrumb-item">
+  <a href="https://labuve.github.io/">Home</a>
+</li>
+
+
+<li class="breadcrumb-item">
+  <a href="https://labuve.github.io/blog/">Blogs</a>
+</li>
+
+
+<li class="breadcrumb-item active">
+  <a href="https://labuve.github.io/blog/tech-fun/automatic-documentation/">Automatic documentation</a>
+</li>
+
+  </ol>
+</nav>
+
+
+
+
+<section class="resume-section p-3 p-lg-5 d-flex d-column">
+  <div class="my-auto">
+    <h2 class="mb-0"><span class="text-primary">Automatic documentation</span></h2>
+    <span class="text-primary">August 17, 2019</span>
+	
+		<p>in  
+			 <a href="/categories/tech-fun">Tech Fun</a>
+			
+		</p>
+	
+    <p><strong>Sounds like automatic differentiation, but it is far less complicated. It is a program that reads in your program (for example, a do file) and automatically generates documentation for it.</strong></p>
+
+<p>Why do I need such? At the beginning of PhD I used to have at most one project at a time. Keeping track of things was easy. Along the way, I accumulated a portfolio of projects. For each of them I write tons of codes (partly because my programmer sister has taught me that having one big file with everything is bad). Sometimes switching between the projects takes months and taking things up from where I left them gets hard. I forget some little &ldquo;annoying&rdquo; details, like which arguments to supply and how to run it. It was clear to me: I need to keep a proper documentation. Hopefully, it is also helpful when one day the papers get published.</p>
+
+<p>Be it couple of files, I could have done it all manually. Or maybe not&hellip; Just the thought that I would need to keep track of twice as many documents sends me to shiver.</p>
+
+<p>I have noticed that proper package developers usually include their documentation at the beginning of the code file, commenting it out. This way it is easier to keep the information up-to-date. Change the code - change the comment. Alas, my codes are not part of the package, and I cannot take advantage of ready automatic documentation tools available for package developers (bless Hadley Wickham for making R so consistent and logical).</p>
+
+<p>Search for ready automatic documentation programs did not yield much result: either input types are unsupported, or output (I needed them in markdown), or they are too difficult for me to understand.</p>
+
+<p>And then it struck me. Automatic documentation generation is nothing more than text parsing exercise. So I set out to write my own script. It searches for all new or recently modified code files in my project folder, parses the text and pastes it to a markdown file in my documentation subfolder. Using git, I can push these files into wiki submodule of my project, which will display all information online.</p>
+
+<h2 id="technical-bits">Technical bits</h2>
+
+<h3 id="special-comment">Special comment</h3>
+
+<p>As I&rsquo;ve already mentioned that automating documentation generation amounts to including a special comment block. To distinguish documentation code block I have used a special comment sign (<code>#'</code> or <code>*'</code> for Stata) that I have borrowed from R. So all lines that start with the special sign will be part of the documentation file.</p>
+
+<h3 id="parsing-and-outputing">Parsing and outputing</h3>
+
+<p>After detecting the special comment block, the script is ridiculously simple. Basic idea is to strip away the special comment sign and simply copy the rest of the text into a markdown file. Of course, for this to work, the documentation comment block should follow a simple <a href="https://www.markdownguide.org/cheat-sheet">markdown syntax</a>. In addition to the simple idea, I have applied different rules to some section headings:</p>
+
+<ul>
+<li>link title to the actual code file</li>
+<li>apply additional styling to the arguments section</li>
+</ul>
+
+<p>These rules work by extracting text matching certain parameters. For example, if a line starts with <code>@title</code>, I know the rest of the line will contain title of the document.</p>
+
+<p>To a more technically inclined reader, all that my script does is continuously apply <code>sed</code> to the extracted lines and <code>echo</code> the output into a markdown file.</p>
+
+<h3 id="input">Input</h3>
+
+<p>The script works both with single code file and with a project folder that contains the code files. That is, it is really easy to mass generate documentation files.</p>
+
+<p>However, not all the codes in the folder need documentation; for example, a script from workshop I use as a reference. My script relies on git version control in deciding which files are relevant: if it is controlled by git, then it is worth a documentation. Using git also allows me to link documentation title to the code file in the remote repository page.</p>
+
+<h3 id="publishing">Publishing</h3>
+
+<p>Since I am using git and remote repository, I am also using wiki submodule to publish the documentation files. The path to the documentation files inside wiki follows is similar to the code file path inside project directory.</p>
+
+<h3 id="if-i-have-time-in-the-future">If I have time in the future, &hellip;</h3>
+
+<p>&hellip; I would like to make the script a bit more flexible. Currently, my script parses and outputs documentation information line by line. Therefore, it can neither reorder sections nor augment with information found later under the same section heading. The output will look exactly the same way as the comment block. So, a nice extension would have been to extract all section-relevant data into a separate array and then output everything together. This would allow special comments organized like this</p>
+
+<pre><code>#' @section1
+#' comment 1
+#' 
+#' @section2
+#' comment 1
+#'
+#' @section1
+#' comment 2
+</code></pre>
+
+<p>to appear correctly in the documentation file: two comments under section 1 and one comment under section 2.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>Now, I can just click on respective wiki post and see all relevant information: usage, argument types and accepted values, description, input and output files. No need to traverse the code to make sense of it. Just work on the actual task.</p>
+    
+    <ul class="tags">
+    
+      <li><a class="tag" href="/tags/software">software</a></li>
+    
+      <li><a class="tag" href="/tags/documentation">documentation</a></li>
+    
+      <li><a class="tag" href="/tags/git">git</a></li>
+    
+      <li><a class="tag" href="/tags/bash-script">bash script</a></li>
+    
+      <li><a class="tag" href="/tags/markdown">markdown</a></li>
+    
+</ul>
+
+  </div>
+</section>
+
+
+    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> </span>
+    
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  
+  <script src="/js/resume.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '');
+  </script>
+  
+
+  
+</body>
+</html>
