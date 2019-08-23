@@ -128,6 +128,71 @@
 		</p>
 	
 	
+		<p><strong>Sounds like automatic differentiation, but it is far less complicated. It is a program that reads in your program (for example, a do file) and automatically generates documentation for it.</strong></p>
+
+<p>Why do I need such? At the beginning of PhD I used to have at most one project at a time. Keeping track of things was easy. Along the way, I accumulated a portfolio of projects. For each of them I write tons of codes (partly because my programmer sister has taught me that having one big file with everything is bad). Sometimes switching between the projects takes months and taking things up from where I left them gets hard. I forget some little &ldquo;annoying&rdquo; details, like which arguments to supply and how to run it. It was clear to me: I need to keep a proper documentation. Hopefully, it is also helpful when one day the papers get published.</p>
+
+<p>Be it couple of files, I could have done it all manually. Or maybe not&hellip; Just the thought that I would need to keep track of twice as many documents sends me to shiver. Search for some ready solution did not yield much results: either my target programming languages are too &ldquo;simple&rdquo;, or the output is not what I wanted.</p>
+
+<p>After a little thinking it struck me that automatic documentation is nothing more than text parsing exercise. So I set out to write my own script. It searches for all new or recently modified code files in my project folder, parses the text and pastes it to a markdown file in my documentation subfolder. Using git, I can push these files into wiki submodule of my project, which will display all information online.</p>
+
+<h2 id="technical-bits">Technical bits</h2>
+
+<h3 id="special-comment">Special comment</h3>
+
+<p>As I&rsquo;ve already mentioned that automating documentation generation amounts to including a special comment block. To distinguish documentation code block I have used a special comment sign (<code>#'</code> or <code>*'</code> for Stata) that I have borrowed from R. So all lines that start with the special sign will be part of the documentation file.</p>
+
+<h3 id="parsing-and-outputing">Parsing and outputing</h3>
+
+<p>After detecting the special comment block, the script is ridiculously simple. Basic idea is to strip away the special comment sign and simply copy the rest of the text into a markdown file. Of course, for this to work, the documentation comment block should follow a simple <a href="https://www.markdownguide.org/cheat-sheet">markdown syntax</a>. In addition to the simple idea, I have applied different rules to some sections. For example, linking documentation title to the actual code file. These rules work by extracting text matching certain parameters. For example, if a line starts with <code>@title</code>, I know the rest of the line will contain title of the document.</p>
+
+<p>To a more technically inclined reader, all that my script does is continuously apply <code>sed</code> to the extracted lines and <code>echo</code> the output into a markdown file.</p>
+
+<h3 id="input">Input</h3>
+
+<p>The script works both with single code file and with a project folder that contains the code files. That is, it is really easy to mass generate documentation files.</p>
+
+<p>However, not all the codes in the folder need documentation; for example, a script from workshop I use as a reference. My script relies on git version control in deciding which files are relevant: if it is controlled by git, then it is worth a documentation. Using git also allows me to link documentation title to the code file in the remote repository page.</p>
+
+<h3 id="publishing">Publishing</h3>
+
+<p>Since I am using git and remote repository, I am also using wiki submodule to publish the documentation files. The path to the documentation files inside wiki follows is similar to the code file path inside project directory.</p>
+
+<h3 id="if-i-have-time-in-the-future">If I have time in the future, &hellip;</h3>
+
+<p>&hellip; I would like to make the script a bit more flexible. Currently, my script parses and outputs documentation information line by line. Therefore, it can neither reorder sections nor augment with information found later under the same section heading. The output will look exactly the same way as the comment block. So, a nice extension would have been to extract all section-relevant data into a separate array and then output everything together. This would allow special comments organized like this</p>
+
+<pre><code>#' @section1
+#' comment 1
+#' 
+#' @section2
+#' comment 1
+#'
+#' @section1
+#' comment 2
+</code></pre>
+
+<p>to appear correctly in the documentation file: two comments under section 1 and one comment under section 2.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>Now, I can just click on respective wiki post and see all relevant information: usage, argument types and accepted values, description, input and output files. No need to traverse the code to make sense of it. Just work on the actual task.</p>
+		
+		<ul class="tags">
+    
+      <li><a class="tag" href="/tags/software">software</a></li>
+    
+      <li><a class="tag" href="/tags/documentation">documentation</a></li>
+    
+      <li><a class="tag" href="/tags/git">git</a></li>
+    
+      <li><a class="tag" href="/tags/bash-script">bash script</a></li>
+    
+      <li><a class="tag" href="/tags/markdown">markdown</a></li>
+    
+</ul>
+
+	
   </div>
 </section>
 
