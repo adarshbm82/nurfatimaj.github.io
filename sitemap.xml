@@ -51,60 +51,66 @@
   
   <url>
     <loc>https://labuve.github.io/blog/tech-fun/automatic-documentation/</loc>
-    <lastmod>2019-08-24T10:04:55+06:00</lastmod>
+    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
   </url>
   
   <url>
     <loc>https://labuve.github.io/blog/</loc>
-    <lastmod>2019-08-24T10:04:55+06:00</lastmod>
+    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://labuve.github.io/categories/</loc>
-    <lastmod>2019-08-24T10:04:55+06:00</lastmod>
+    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://labuve.github.io/tags/</loc>
-    <lastmod>2019-08-24T10:04:55+06:00</lastmod>
+    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://labuve.github.io/tags/bash-script/</loc>
-    <lastmod>2019-08-24T10:04:55+06:00</lastmod>
+    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://labuve.github.io/tags/documentation/</loc>
-    <lastmod>2019-08-24T10:04:55+06:00</lastmod>
+    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://labuve.github.io/tags/git/</loc>
-    <lastmod>2019-08-24T10:04:55+06:00</lastmod>
+    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://labuve.github.io/tags/markdown/</loc>
-    <lastmod>2019-08-24T10:04:55+06:00</lastmod>
+    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://labuve.github.io/tags/software/</loc>
-    <lastmod>2019-08-24T10:04:55+06:00</lastmod>
+    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://labuve.github.io/categories/tech-fun/</loc>
-    <lastmod>2019-08-24T10:04:55+06:00</lastmod>
+    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://labuve.github.io/tags/text-parsing/</loc>
+    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
