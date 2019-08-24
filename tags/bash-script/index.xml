@@ -17,7 +17,7 @@
       <pubDate>Thu, 22 Aug 2019 20:00:00 +0600</pubDate>
       
       <guid>https://labuve.github.io/blog/tech-fun/automatic-documentation/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Sounds like automatic differentiation, but it is far less complicated. It is a program that reads in your program (for example, a do file) and automatically generates documentation for it.&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;At the beginning of PhD I used to have at most one project at a time. Keeping track of things was easy. Along the way, I accumulated a portfolio of projects. For each of them I write tons of codes (partly because my programmer sister has taught me that having one big file with everything is bad). One day I found myself looking at my own code of three months earlier and spending half a day to retrace its logic. There were dozens of errors before I was able to run everything smoothly without forgetting some annoying little detail.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
