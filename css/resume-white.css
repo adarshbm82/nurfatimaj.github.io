@@ -70,13 +70,12 @@ h2 {
 
 #sideNav .navbar-brand {
 	color: rgba(0, 51, 102, 1) !important;
-	width: 50%; 
 	white-space: normal; 
 }
 
 @media (min-width: 992px) {
   #sideNav {
-    text-align: center;
+    text-align: left;
     position: fixed;
     top: 0;
     left: 0;
@@ -88,8 +87,11 @@ h2 {
   }
   #sideNav .navbar-brand {
     display: flex;
-    margin: auto auto 0;
+    margin: auto auto 0 3rem;
     padding: 0.5rem;
+  }
+  #sideNav .navbar-nav {
+	  margin-left: 3rem; 
   }
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
