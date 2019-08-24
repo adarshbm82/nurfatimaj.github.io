@@ -1,10 +1,10 @@
 
 .pvClearFix:after { content: ""; display: table; clear: both; }
 
-body { width: 220mm; margin: auto; font-size: 22px; font-family: 'Open Sans', serif; text-align: justify; }
+body { width: 220mm; margin: auto; font-size: 22px; font-family: 'Open Sans', serif; text-align: justify; font-family: 'PT Serif', serif; }
 
-h1 { text-align: center; font-size: 32px; font-family: "Cinzel"; font-weight: bolder; }
-h2 { font-size: 20px; text-transform: uppercase; font-family: "Cinzel"; font-weight: lighter; margin-top: 36px; }
+h1 { text-align: center; font-size: 36px; font-weight: bolder; }
+h2 { font-size: 20px; text-transform: uppercase; font-weight: lighter; margin-top: 36px; }
 td { vertical-align: top; }
 
 #contact { line-height: 1; }
