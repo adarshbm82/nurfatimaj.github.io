@@ -22,7 +22,6 @@ h6 {
   color: rgba(52, 58, 64, 1);
 }
 
-
 h1, h2{
   text-transform: uppercase;
 }
@@ -34,6 +33,10 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
+}
+h3.subtitle {
+	text-transform: uppercase; 
+	font-size: 2.5rem; 
 }
 
 .subheading {
