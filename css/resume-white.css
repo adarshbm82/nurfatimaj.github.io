@@ -119,6 +119,16 @@ h3.subtitle {
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
+
+  .tag-cloud-container {
+    position: fixed;
+    display: flex;
+    top: 20%;
+    right: 0;
+    flex-direction: column;
+    width: 20rem;
+    height: 100vh;
+  }
 }
 
 section.resume-section {
@@ -144,6 +154,10 @@ section.resume-section .resume-item .resume-date {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
+  }
+
+  #blogs-content {
+    padding-right: 20rem !important;
   }
 }
 
