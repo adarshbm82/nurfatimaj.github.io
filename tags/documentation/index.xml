@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>documentation on Nurfatima Jandarova</title>
-    <link>/tags/documentation/</link>
+    <link>http://www.nurfatimaj.com/tags/documentation/</link>
     <description>Recent content in documentation on Nurfatima Jandarova</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Aug 2019 20:00:00 +0600</lastBuildDate>
     
-	<atom:link href="/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.nurfatimaj.com/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Automatic documentation</title>
-      <link>/blog/tech-fun/automatic-documentation/</link>
+      <link>http://www.nurfatimaj.com/blog/tech-fun/automatic-documentation/</link>
       <pubDate>Thu, 22 Aug 2019 20:00:00 +0600</pubDate>
       
-      <guid>/blog/tech-fun/automatic-documentation/</guid>
+      <guid>http://www.nurfatimaj.com/blog/tech-fun/automatic-documentation/</guid>
       <description>&lt;p&gt;&lt;strong&gt;At the beginning of PhD I used to have at most one project at a time. Keeping track of things was easy. Along the way, I accumulated a portfolio of projects. For each of them I write tons of codes (partly because my programmer sister has taught me that having one big file with everything is bad). One day I found myself looking at my own code of three months earlier and spending half a day to retrace its logic. There were dozens of errors before I was able to run everything smoothly without forgetting some annoying little detail.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     

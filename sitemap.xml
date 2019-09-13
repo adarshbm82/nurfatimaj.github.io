@@ -3,307 +3,307 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/projects/creations/</loc>
+    <loc>http://www.nurfatimaj.com/projects/creations/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/projects/contributions/</loc>
+    <loc>http://www.nurfatimaj.com/projects/contributions/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/projects/contributions/deploy-triggers/</loc>
+    <loc>http://www.nurfatimaj.com/projects/contributions/deploy-triggers/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>/publications/alldaydevops/</loc>
+    <loc>http://www.nurfatimaj.com/publications/alldaydevops/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>/projects/contributions/shields-docker/</loc>
+    <loc>http://www.nurfatimaj.com/projects/contributions/shields-docker/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>/projects/contributions/schema-org/</loc>
+    <loc>http://www.nurfatimaj.com/projects/contributions/schema-org/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>/test/</loc>
+    <loc>http://www.nurfatimaj.com/test/</loc>
     <lastmod>2019-09-13T20:30:08+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/print/</loc>
+    <loc>http://www.nurfatimaj.com/print/</loc>
     <lastmod>2019-09-11T22:43:25+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/tech-fun/automatic-documentation/</loc>
+    <loc>http://www.nurfatimaj.com/blog/tech-fun/automatic-documentation/</loc>
     <lastmod>2019-08-24T10:49:02+06:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/</loc>
-    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
+    <loc>http://www.nurfatimaj.com/blog/</loc>
     <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>http://www.nurfatimaj.com/categories/</loc>
     <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/bash-script/</loc>
+    <loc>http://www.nurfatimaj.com/tags/</loc>
     <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/documentation/</loc>
+    <loc>http://www.nurfatimaj.com/tags/bash-script/</loc>
     <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/git/</loc>
+    <loc>http://www.nurfatimaj.com/tags/documentation/</loc>
     <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/markdown/</loc>
+    <loc>http://www.nurfatimaj.com/tags/git/</loc>
     <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/software/</loc>
+    <loc>http://www.nurfatimaj.com/tags/markdown/</loc>
     <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/tech-fun/</loc>
+    <loc>http://www.nurfatimaj.com/tags/software/</loc>
     <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/text-parsing/</loc>
+    <loc>http://www.nurfatimaj.com/categories/tech-fun/</loc>
     <lastmod>2019-08-24T10:49:02+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/atlassian-ecosystem/</loc>
+    <loc>http://www.nurfatimaj.com/tags/text-parsing/</loc>
+    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.nurfatimaj.com/tags/atlassian-ecosystem/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/bosh/</loc>
+    <loc>http://www.nurfatimaj.com/tags/bosh/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/projects/creations/bosh-agents/</loc>
+    <loc>http://www.nurfatimaj.com/projects/creations/bosh-agents/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/devops/</loc>
-    <lastmod>2019-08-15T09:57:24+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/java/</loc>
+    <loc>http://www.nurfatimaj.com/tags/devops/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/rest-apis/</loc>
+    <loc>http://www.nurfatimaj.com/tags/java/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/bash/shell/</loc>
+    <loc>http://www.nurfatimaj.com/tags/rest-apis/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/monit/</loc>
+    <loc>http://www.nurfatimaj.com/tags/bash/shell/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/python/</loc>
+    <loc>http://www.nurfatimaj.com/tags/monit/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/xml/xslt/</loc>
+    <loc>http://www.nurfatimaj.com/tags/python/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>http://www.nurfatimaj.com/tags/xml/xslt/</loc>
+    <lastmod>2019-08-15T09:57:24+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.nurfatimaj.com/</loc>
     <lastmod>2019-08-22T21:28:29+06:00</lastmod>
     <priority>1</priority>
   </url>
   
   <url>
-    <loc>/tags/ci/cd-pipelines/</loc>
+    <loc>http://www.nurfatimaj.com/tags/ci/cd-pipelines/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/continuous-delivery/</loc>
+    <loc>http://www.nurfatimaj.com/tags/continuous-delivery/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/continuous-integration/</loc>
+    <loc>http://www.nurfatimaj.com/tags/continuous-integration/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/culture/</loc>
+    <loc>http://www.nurfatimaj.com/tags/culture/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/agile/</loc>
+    <loc>http://www.nurfatimaj.com/tags/agile/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/atlassian-developer-ecosystem/</loc>
+    <loc>http://www.nurfatimaj.com/tags/atlassian-developer-ecosystem/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/projects/creations/marketplace/</loc>
+    <loc>http://www.nurfatimaj.com/projects/creations/marketplace/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/bamboo/</loc>
-    <lastmod>2019-08-15T09:57:24+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/bitbucket/</loc>
+    <loc>http://www.nurfatimaj.com/tags/bamboo/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/confluence/</loc>
+    <loc>http://www.nurfatimaj.com/tags/bitbucket/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/docker/</loc>
+    <loc>http://www.nurfatimaj.com/tags/confluence/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/projects/creations/docker-marketplace/</loc>
-    <lastmod>2019-08-15T09:57:24+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/jira/</loc>
+    <loc>http://www.nurfatimaj.com/tags/docker/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/json/</loc>
+    <loc>http://www.nurfatimaj.com/projects/creations/docker-marketplace/</loc>
+    <lastmod>2019-08-15T09:57:24+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.nurfatimaj.com/tags/jira/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/javascript/</loc>
+    <loc>http://www.nurfatimaj.com/tags/json/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/maven/</loc>
+    <loc>http://www.nurfatimaj.com/tags/javascript/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/projects/</loc>
+    <loc>http://www.nurfatimaj.com/tags/maven/</loc>
+    <lastmod>2019-08-15T09:57:24+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.nurfatimaj.com/projects/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>/publications/</loc>
+    <loc>http://www.nurfatimaj.com/publications/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/search/</loc>
+    <loc>http://www.nurfatimaj.com/search/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0.1</priority>
   </url>
   
   <url>
-    <loc>/tags/spring/</loc>
+    <loc>http://www.nurfatimaj.com/tags/spring/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/jquery/</loc>
+    <loc>http://www.nurfatimaj.com/tags/jquery/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/node.js/</loc>
+    <loc>http://www.nurfatimaj.com/tags/node.js/</loc>
     <lastmod>2019-08-15T09:57:24+06:00</lastmod>
     <priority>0</priority>
   </url>

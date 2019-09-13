@@ -2,103 +2,103 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Nurfatima Jandarova</title>
-    <link>/</link>
+    <link>http://www.nurfatimaj.com/</link>
     <description>Recent content in Home on Nurfatima Jandarova</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Feb 2018 18:56:13 -0500</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.nurfatimaj.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Atlassian Deployment Triggers</title>
-      <link>/projects/contributions/deploy-triggers/</link>
+      <link>http://www.nurfatimaj.com/projects/contributions/deploy-triggers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/contributions/deploy-triggers/</guid>
+      <guid>http://www.nurfatimaj.com/projects/contributions/deploy-triggers/</guid>
       <description>Addressed pretty significant page load performance issue founde in larger deployments. Eliminates uses of intensive backend query, replacing it with an asynchronous API call against a lucene index. This change reduces page load from from 2+ minutes to nearly instant, with an incredibly responsive UI.</description>
     </item>
     
     <item>
       <title>Organically DevOps: Building Quality and Security into the Software Supply Chain at Liberty Mutual</title>
-      <link>/publications/alldaydevops/</link>
+      <link>http://www.nurfatimaj.com/publications/alldaydevops/</link>
       <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>/publications/alldaydevops/</guid>
+      <guid>http://www.nurfatimaj.com/publications/alldaydevops/</guid>
       <description>This talk looked at Liberty Mutual’s transformation to Continuous Integration, Continuous Delivery, and DevOps. For a large, heavily regulated industry, this task can not only be daunting, but viewed by many as impossible. Often, organizations try to reduce the friction through micro-fixes, but Eddie’s team asked how to change the culture to reduce the friction and concluded with the following final points:
  Don’t mandate DevOps. Give employees the chance to master their discipline with examples to set and follow.</description>
     </item>
     
     <item>
       <title>Added Docker Build Status Badge to shields.io</title>
-      <link>/projects/contributions/shields-docker/</link>
+      <link>http://www.nurfatimaj.com/projects/contributions/shields-docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/contributions/shields-docker/</guid>
+      <guid>http://www.nurfatimaj.com/projects/contributions/shields-docker/</guid>
       <description>Shields.io is a massive library of badges that can be inserted into project README&amp;rsquo;s or websites displaying various statuses (code coverage, health, version, etc). Support for docker was missing the current build health, and was a pretty trivial addition.</description>
     </item>
     
     <item>
       <title>Schema.org Structured Data documentation fixes</title>
-      <link>/projects/contributions/schema-org/</link>
+      <link>http://www.nurfatimaj.com/projects/contributions/schema-org/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/contributions/schema-org/</guid>
+      <guid>http://www.nurfatimaj.com/projects/contributions/schema-org/</guid>
       <description>While adding Structured Data to a client&amp;rsquo;s website I found some example JSON that was invalid. Simple contribution to cleanup the user documentation providing syntactically valid JSON documents.</description>
     </item>
     
     <item>
       <title>Test</title>
-      <link>/test/</link>
+      <link>http://www.nurfatimaj.com/test/</link>
       <pubDate>Fri, 13 Sep 2019 20:29:44 +0200</pubDate>
       
-      <guid>/test/</guid>
+      <guid>http://www.nurfatimaj.com/test/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Automatic documentation</title>
-      <link>/blog/tech-fun/automatic-documentation/</link>
+      <link>http://www.nurfatimaj.com/blog/tech-fun/automatic-documentation/</link>
       <pubDate>Thu, 22 Aug 2019 20:00:00 +0600</pubDate>
       
-      <guid>/blog/tech-fun/automatic-documentation/</guid>
+      <guid>http://www.nurfatimaj.com/blog/tech-fun/automatic-documentation/</guid>
       <description>&lt;p&gt;&lt;strong&gt;At the beginning of PhD I used to have at most one project at a time. Keeping track of things was easy. Along the way, I accumulated a portfolio of projects. For each of them I write tons of codes (partly because my programmer sister has taught me that having one big file with everything is bad). One day I found myself looking at my own code of three months earlier and spending half a day to retrace its logic. There were dozens of errors before I was able to run everything smoothly without forgetting some annoying little detail.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>BOSH release for Bamboo &amp; Remote Agents</title>
-      <link>/projects/creations/bosh-agents/</link>
+      <link>http://www.nurfatimaj.com/projects/creations/bosh-agents/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
-      <guid>/projects/creations/bosh-agents/</guid>
+      <guid>http://www.nurfatimaj.com/projects/creations/bosh-agents/</guid>
       <description>BOSH (Bosh Outer SHell) &amp;ldquo;&amp;hellip; is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.&amp;rdquo; And it&amp;rsquo;s amazingly powerful. This examples uses BOSH to provision an Alassian vendor app running on JDK along with the support Postgres database and agents to support it. The releases manages the health of services and will automatically provision, start/stop processes across the various services.</description>
     </item>
     
     <item>
       <title>Atlassian Marketplace Plugins</title>
-      <link>/projects/creations/marketplace/</link>
+      <link>http://www.nurfatimaj.com/projects/creations/marketplace/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/creations/marketplace/</guid>
+      <guid>http://www.nurfatimaj.com/projects/creations/marketplace/</guid>
       <description>Multiple plugins used by thousands of teams that provide enhanced functionality of Atlassian’s core products (primarily JIRA and Bamboo) to enrich CI/CD capabilities, DevOps automation, or productivity. Functionality spans user interface, web services and persistence.</description>
     </item>
     
     <item>
       <title>Docker image for Bitbucket CI/CD Pipelines  &#34;shipit&#34;</title>
-      <link>/projects/creations/docker-marketplace/</link>
+      <link>http://www.nurfatimaj.com/projects/creations/docker-marketplace/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/creations/docker-marketplace/</guid>
+      <guid>http://www.nurfatimaj.com/projects/creations/docker-marketplace/</guid>
       <description>Provides required dependencies and additional utilities to simplify and codify the process of building, testing and delivering Atlassian plugins all the way to the live marketplace. Executes integration/AUT level tests against all stated compatible versions for the productUploads generated artifact to Atlassian marketplaceProvides corresponding metadata indicating version, release notes, and compatibility</description>
     </item>
     
     <item>
       <title>Search Results</title>
-      <link>/search/</link>
+      <link>http://www.nurfatimaj.com/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/search/</guid>
+      <guid>http://www.nurfatimaj.com/search/</guid>
       <description>This file exists solely to respond to /search URL with the related search layout template.
 No content shown here is rendered, all content is based in the template layouts/page/search.html
 Setting a very low sitemap priority will tell search engines this is not important content.
