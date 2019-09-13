@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Nurfatima Jandarova</title>
-    <link>https://labuve.github.io/projects/</link>
+    <link>www.nurfatimaj.com/projects/</link>
     <description>Recent content in Projects on Nurfatima Jandarova</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://labuve.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="www.nurfatimaj.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
