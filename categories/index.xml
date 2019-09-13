@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Nurfatima Jandarova</title>
-    <link>www.nurfatimaj.com/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Nurfatima Jandarova</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Aug 2019 20:00:00 +0600</lastBuildDate>
     
-	<atom:link href="www.nurfatimaj.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>tech fun</title>
-      <link>www.nurfatimaj.com/categories/tech-fun/</link>
+      <link>/categories/tech-fun/</link>
       <pubDate>Thu, 22 Aug 2019 20:00:00 +0600</pubDate>
       
-      <guid>www.nurfatimaj.com/categories/tech-fun/</guid>
+      <guid>/categories/tech-fun/</guid>
       <description></description>
     </item>
     
