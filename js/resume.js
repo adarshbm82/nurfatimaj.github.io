@@ -22,7 +22,8 @@
 
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
-    target: '#sideNav'
+    target: '#sideNav',
+    offset: 50
   });
 
 
@@ -30,7 +31,7 @@
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   })
-  
+
   function isVisibleInViewport(elem)
 {
     var y = elem.offsetTop;
@@ -41,10 +42,10 @@
 
     var maxHeight = y + height;
     var isVisible = ( y < ( window.pageYOffset + window.innerHeight ) ) && ( maxHeight >= window.pageYOffset );
-    return isVisible; 
+    return isVisible;
 
 }
-  
+
   if($('#about').length > 0) {
 	  $(window).scroll(function() {
 		  var canvas = document.getElementById('about');
