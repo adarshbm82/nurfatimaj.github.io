@@ -48,15 +48,11 @@ h3.subtitle {
 }
 
 .list-social-icons a {
-  color: #495057;
+  color: rgba(134, 142, 150, 1);
 }
 
 .list-social-icons a:hover {
   color: rgba(0, 51, 102, 1);
-}
-
-.list-social-icons a .fa-lg {
-  font-size: 1.75rem;
 }
 
 .list-icons {
@@ -87,7 +83,6 @@ h3.subtitle {
     flex-direction: column;
     width: 17rem;
     height: 100vh;
-	  border-color: rgba(52, 58, 64, 0.5);
   }
   #sideNav .navbar-brand {
     display: flex;
@@ -161,7 +156,6 @@ section.resume-section .resume-item .resume-date {
     padding-right: 20rem !important;
   }
 }
-
 
 .bg-primary {
   background-color: rgb(255, 255, 255) !important;
