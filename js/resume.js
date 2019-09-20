@@ -50,18 +50,18 @@
 	  $(window).scroll(function() {
 		  var canvas = document.getElementById('about');
 		  if(isVisibleInViewport(canvas)) {
-			  $('.nav-title').addClass('d-sm-none');
-			  $('.nav-title').removeClass('d-sm-block');
+			  $('.nav-title').addClass('d-xs-none');
+			  $('.nav-title').removeClass('d-xs-block');
 		  }
 		  else {
-			  $('.nav-title').removeClass('d-sm-none');
-			  $('.nav-title').addClass('d-sm-block');
+			  $('.nav-title').removeClass('d-xs-none');
+			  $('.nav-title').addClass('d-xs-block');
 		  }
 	  });
   }
   else {
-	  $('.nav-title').removeClass('d-sm-none');
-	  $('.nav-title').addClass('d-sm-block');
+	  $('.nav-title').removeClass('d-xs-none');
+	  $('.nav-title').addClass('d-xs-block');
   }
 
 

@@ -3,6 +3,7 @@ body {
   padding-top: 54px;
   color: #868e96;
   position: relative;
+  text-align: justify; 
 }
 
 @media (min-width: 992px) {

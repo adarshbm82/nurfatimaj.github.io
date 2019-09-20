@@ -3,6 +3,7 @@ body {
   padding-top: 54px;
   color: rgba(134, 142, 150, 1);
   position: relative;
+  text-align: justify;
 }
 
 @media (min-width: 992px) {
@@ -165,7 +166,10 @@ section.resume-section .resume-item .resume-date {
   color: rgba(0, 51, 102, 1) !important;
 }
 
-#about_card { min-width: 45%; border-right-width: thick; }
+@media (min-width: 992px) {
+  #about_card { min-width: 45%; border-right-width: thick; }
+  #about_card { margin-right: 6rem; }
+}
 
 a {
   color: rgba(0, 51, 102, 0.5);
