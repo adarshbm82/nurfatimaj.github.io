@@ -3,7 +3,7 @@ body {
   padding-top: 54px;
   color: #868e96;
   position: relative;
-  text-align: justify; 
+  text-align: justify;
 }
 
 @media (min-width: 992px) {
@@ -167,7 +167,13 @@ section.resume-section .resume-item .resume-date {
   color: #BD5D38 !important;
 }
 
-#about_card { min-width: 45%; border-right-width: thick; }
+#contact-map { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+
+@media (min-width: 992px) {
+  #about_card { min-width: 45%; border-right-width: thick; }
+  #about_card { margin-right: 6rem; }
+  #contact-information {margin-right: 6rem; }
+}
 
 a {
   color: #BD5D38;
