@@ -172,7 +172,6 @@ section.resume-section .resume-item .resume-date {
 @media (min-width: 992px) {
   #about_card { min-width: 45%; border-right-width: thick; }
   #about_card { margin-right: 6rem; }
-  #contact-information {margin-right: 6rem; }
 }
 
 a {
