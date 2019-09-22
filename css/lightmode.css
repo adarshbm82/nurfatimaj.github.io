@@ -1,0 +1,51 @@
+body {
+  color: rgba(134, 142, 150, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(52, 58, 64, 1);
+}
+
+a {
+  color: rgba(0, 51, 102, 0.5);
+}
+
+a:hover, a:focus, a:active {
+  color: rgba(0, 51, 102, 0.75);
+}
+
+.button-light {
+	background-color: rgba(255, 255, 255, 0);
+	border-color: rgb(204, 230, 255);
+}
+ .button-light:hover, .button-light:focus, .button-light:active {
+	 border-color: rgba(0, 51, 102, 1);
+ }
+
+
+.bg-primary-light {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.text-primary-light {
+  color: rgba(0, 51, 102, 1) !important;
+}
+
+.list-social-icons a {
+  color: rgba(134, 142, 150, 1);
+}
+
+.list-social-icons a:hover {
+  color: rgba(0, 51, 102, 1);
+}
+
+.list-icons .list-inline-item i:hover {
+  color: rgba(0, 51, 102, 1);
+}
+
+#contact-map { -webkit-filter: saturate(0%) brightness(100%) contrast(100%); }

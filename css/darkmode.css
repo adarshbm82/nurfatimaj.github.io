@@ -1,0 +1,55 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    color: rgba(255, 255, 255, 0.5);
+    background: black;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  a {
+    color: rgba(0, 123, 255, 0.7);
+  }
+
+  a:hover, a:focus, a:active {
+    color: rgba(0, 123, 255, 1);
+  }
+
+  /*#contact-map { -webkit-filter: saturate(0%) brightness(80%) contrast(100%); }*/
+
+  .button-dark {
+  	background-color: rgba(255, 255, 255, 0);
+  	border-color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.5);
+  }
+   .button-dark:hover, .button-dark:focus, .button-dark:active {
+  	 border-color: rgba(0, 123, 255, 1);
+   }
+
+  .list-social-icons a {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .list-social-icons a:hover {
+    color: rgba(0, 123, 255, 1);
+  }
+
+  .list-icons .list-inline-item i:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* Colour scheme for dark themes */
+.bg-primary-dark {
+  background-color: black !important;
+}
+
+.text-primary-dark {
+  color: #007bff !important;
+}

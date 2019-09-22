@@ -32,6 +32,34 @@
     $('[data-toggle="tooltip"]').tooltip()
   })
 
+  // Detech dark mode preferences
+  function darkmode(){
+
+    /* Set the matchMedia */
+    if (!window.matchMedia){
+      return false;
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+		/* Changes when we reach the min-width  */
+      $('#sideNav').removeClass('navbar-light');
+      $('#sideNav').addClass('navbar-dark');
+
+      $('.bg-primary-light').addClass('bg-primary-dark');
+      $('.bg-primary-light').removeClass('bg-primary-light');
+
+      $('.text-primary-light').addClass('text-primary-dark');
+      $('.text-primary-light').removeClass('text-primary-light');
+
+      $('.button-light').addClass('button-dark');
+      $('.button-light').removeClass('button-light');
+		}
+  };
+
+  /* Call the function */
+  darkmode();
+  /* Attach the function to the resize event listener */
+	window.addEventListener('darkmode', darkmode, false);
+
+  // Show name in navigation if scroll out of about page
   function isVisibleInViewport(elem)
 {
     var y = elem.offsetTop;
