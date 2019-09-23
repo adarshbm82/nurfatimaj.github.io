@@ -1,3 +1,9 @@
+:root {
+  --tag-height: 26px;
+  --arrow-size: 10px;
+  --tag-border-width: 1px;
+  --arrow-size-diff: calc(var(--tag-border-width) / 2);
+}
 .p-0{
   margin: 0 auto;
 }
@@ -31,7 +37,7 @@ div.skills-heading{
 /* From https://codepen.io/wbeeftink/pen/dIaDH */
 
 .tags {
-    font: 12px/1.5 'PT Sans', serif;
+  font: 12px/1.5 'PT Sans', serif;
   list-style: none;
   margin: 0;
   overflow: hidden;
@@ -42,13 +48,17 @@ div.skills-heading{
   float: left;
 }
 
+
 .tag {
-  background: #eee;
+  background: var(--bg-main-colour);
   border-radius: 3px 0 0 3px;
-  color: #999;
-  display: inline-block;
-  height: 26px;
-  line-height: 26px;
+  color: rgba(var(--text-main-colour), 0.75);
+  border-color: rgba(var(--text-highlight-colour), 0.75) transparent rgba(var(--text-highlight-colour), 0.75) rgba(var(--text-highlight-colour), 0.75);
+  border-width: var(--tag-border-width);
+  border-style: solid;
+  display: inline-block ;
+  height: var(--tag-height);
+  line-height: var(--tag-height);
   padding: 0 20px 0 23px;
   position: relative;
   margin: 0 10px 10px 0;
@@ -57,6 +67,33 @@ div.skills-heading{
 }
 
 .tag::before {
+  background: var(--bg-main-colour);
+  width: 0;
+  height: 0;
+  content: '';
+  position: absolute;
+  top: calc(var(--tag-border-width) * -1);
+  right: calc(var(--tag-border-width) * -1);
+  border-top: calc(var(--tag-height) / 2) solid var(--bg-main-colour);
+  border-left: var(--arrow-size) solid rgba(var(--text-highlight-colour), 0.75);
+  border-bottom: calc(var(--tag-height) / 2 + 0.5px) solid var(--bg-main-colour);
+}
+
+.tag::after {
+  width: 0;
+  height: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: var(--tag-border-width);
+  border-top: calc(var(--tag-height) / 2 - var(--arrow-size-diff) ) solid transparent;
+  border-left: calc(var(--arrow-size) - var(--arrow-size-diff) * 3 ) solid var(--bg-main-colour);
+  border-bottom: calc(var(--tag-height) / 2 - var(--arrow-size-diff) ) solid transparent;
+}
+
+
+
+/*.tag::before {
   background: #fff;
   border-radius: 10px;
   box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
@@ -69,15 +106,15 @@ div.skills-heading{
 }
 
 .tag::after {
-  background: #fff;
+  background: var(--bg-main-colour);
   border-bottom: 13px solid transparent;
-  border-left: 10px solid #eee;
+  border-left: 10px solid transparent;
   border-top: 13px solid transparent;
   content: '';
   position: absolute;
   right: 0;
   top: 0;
-}
+}*/
 
 .tag:hover {
   background-color: rgba(0, 51, 102, 1);
