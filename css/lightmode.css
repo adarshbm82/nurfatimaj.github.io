@@ -53,3 +53,7 @@ a:hover, a:focus, a:active {
 }
 
 #contact-map { -webkit-filter: saturate(0%) brightness(100%) contrast(100%); }
+
+pre code {
+  color: rgba(var(--text-main-colour), 1) !important;
+}
