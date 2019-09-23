@@ -28,18 +28,18 @@
 
 
 
-  $(function () {
+  $(function() {
     $('[data-toggle="tooltip"]').tooltip()
   })
 
   // Detech dark mode preferences
-  function darkmode(){
+  function darkmode() {
 
     /* Set the matchMedia */
-    if (!window.matchMedia){
+    if (!window.matchMedia) {
       return false;
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-		/* Changes when we reach the min-width  */
+      /* Changes when we reach the min-width  */
       $('#sideNav').removeClass('navbar-light');
       $('#sideNav').addClass('navbar-dark');
 
@@ -51,45 +51,42 @@
 
       $('.button-light').addClass('button-dark');
       $('.button-light').removeClass('button-light');
-		}
-  };
+    }
+  }
 
   /* Call the function */
   darkmode();
   /* Attach the function to the resize event listener */
-	window.addEventListener('darkmode', darkmode, false);
+  window.addEventListener('darkmode', darkmode, false);
 
   // Show name in navigation if scroll out of about page
-  function isVisibleInViewport(elem)
-{
+  function isVisibleInViewport(elem) {
     var y = elem.offsetTop;
     var height = elem.offsetHeight;
 
-    while ( elem = elem.offsetParent )
-        y += elem.offsetTop;
+    while (elem = elem.offsetParent)
+      y += elem.offsetTop;
 
     var maxHeight = y + height;
-    var isVisible = ( y < ( window.pageYOffset + window.innerHeight ) ) && ( maxHeight >= window.pageYOffset );
+    var isVisible = (y < (window.pageYOffset + window.innerHeight)) && (maxHeight >= window.pageYOffset);
     return isVisible;
 
-}
-
-  if($('#about').length > 0) {
-	  $(window).scroll(function() {
-		  var canvas = document.getElementById('about');
-		  if(isVisibleInViewport(canvas)) {
-			  $('.nav-title').addClass('d-xs-none');
-			  $('.nav-title').removeClass('d-xs-block');
-		  }
-		  else {
-			  $('.nav-title').removeClass('d-xs-none');
-			  $('.nav-title').addClass('d-xs-block');
-		  }
-	  });
   }
-  else {
-	  $('.nav-title').removeClass('d-xs-none');
-	  $('.nav-title').addClass('d-xs-block');
+
+  if ($('#about').length > 0) {
+    $(window).scroll(function() {
+      var canvas = document.getElementById('about');
+      if (isVisibleInViewport(canvas)) {
+        $('.nav-title').addClass('d-lg-none');
+        $('.nav-title').removeClass('d-lg-block');
+      } else {
+        $('.nav-title').removeClass('d-lg-none');
+        $('.nav-title').addClass('d-lg-block');
+      }
+    });
+  } else {
+    $('.nav-title').removeClass('d-lg-none');
+    $('.nav-title').addClass('d-lg-block');
   }
 
 
