@@ -1,51 +1,55 @@
-body {
-  color: rgba(134, 142, 150, 1);
+:root {
+  --bg-main-colour: white;
+  --bg-nav-colour: white;
+  --text-highlight-colour: 0, 51, 102;
+  --text-main-colour: 134, 142, 150;
+  --text-heading-colour: 52, 58, 64;
+  --button-main-colour: 204, 230, 255;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: rgba(52, 58, 64, 1);
+body {
+  color: rgba(var(--text-main-colour), 1);
+  background-color: var(--bg-main-colour);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: rgba(var(--text-heading-colour), 1);
 }
 
 a {
-  color: rgba(0, 51, 102, 0.5);
+  color: rgba(var(--text-highlight-colour), 0.5);
 }
 
 a:hover, a:focus, a:active {
-  color: rgba(0, 51, 102, 0.75);
+  color: rgba(var(--text-highlight-colour), 0.75);
 }
 
 .button-light {
-	background-color: rgba(255, 255, 255, 0);
-	border-color: rgb(204, 230, 255);
+	background-color: transparent;
+	border-color: rgb(var(--button-main-colour));
 }
  .button-light:hover, .button-light:focus, .button-light:active {
-	 border-color: rgba(0, 51, 102, 1);
+	 border-color: rgba(var(--text-highlight-colour), 1);
  }
 
-
 .bg-primary-light {
-  background-color: rgb(255, 255, 255) !important;
+  background-color: var(--bg-main-colour) !important;
+}
+
+.navbar-bg-light {
+  background-color: var(--bg-nav-colour) !important;
 }
 
 .text-primary-light {
-  color: rgba(0, 51, 102, 1) !important;
+  color: rgba(var(--text-highlight-colour), 1) !important;
 }
 
 .list-social-icons a {
-  color: rgba(134, 142, 150, 1);
+  color: rgba(var(--text-main-colour), 1);
 }
 
 .list-social-icons a:hover {
-  color: rgba(0, 51, 102, 1);
-}
-
-.list-icons .list-inline-item i:hover {
-  color: rgba(0, 51, 102, 1);
+  color: rgba(var(--text-highlight-colour), 1);
 }
 
 #contact-map { -webkit-filter: saturate(0%) brightness(100%) contrast(100%); }
