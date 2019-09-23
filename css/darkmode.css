@@ -25,8 +25,6 @@
     color: rgba(var(--text-highlight-colour), 1);
   }
 
-  /*#contact-map { -webkit-filter: saturate(0%) brightness(80%) contrast(100%); }*/
-
   .list-social-icons a {
     color: rgba(var(--text-main-colour), 0.75);
   }
