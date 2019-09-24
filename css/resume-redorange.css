@@ -37,6 +37,7 @@ h1 {
 h2 {
   font-size: 3.5rem;
 }
+h3 {font-size: 3rem; }
 h3.subtitle {
 	text-transform: uppercase;
 	font-size: 2.5rem;
@@ -146,6 +147,7 @@ section.resume-section .resume-item .resume-date {
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
+  #about_content { max-width: 50%; }
 }
 
 @media (min-width: 992px) {
