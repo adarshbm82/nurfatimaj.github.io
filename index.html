@@ -88,8 +88,8 @@
     
 	<section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
 	<div class="my-auto page-content">
-		<div class="resume-item d-flex flex-column flex-md-row justify-content-md-between">
-			<div class="resume-content my-5" id="about_card">
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+			<div class="resume-content" id="about_card">
 				<span class="d-none d-lg-block center">
 					
 						<span class="img-replacement fa-stack fa-7x">
@@ -121,19 +121,14 @@
 				</div>
 			</div>
 
-			<div class="resume-content position-relative my-5" id="about_content">
-				<div class="pb-5 mb-5">
-    <p>Welcome!</p>
-    <p>I am a PhD student at the Department of Economics at the European University Institute. </p>
-    <p>My area of expertise is Applied Microeconometrics. My research is mainly focused on educational choices and their effects on labour market outcomes.</p>
-</div>
+			<div class="resume-content d-flex flex-column justify-content-between" id="about_content">
+				<div><p>Welcome!</p>
 
-<div class="position-absolute" style="bottom: 0;">
-    <iframe src="http://www.nurfatimaj.com/print/" style="display: none;" name="getpdf_frame"></iframe>
-    <button class="button-light" onclick="frames['getpdf_frame'].print()">Print full CV</button>
-</div>
+<p>I am a PhD student at the Department of Economics at the European University Institute.</p>
 
-				<div class="my-5">
+<p>My area of expertise is Applied Microeconometrics. My research is mainly focused on educational choices and their effects on labour market outcomes.</p>
+</div>
+				<div>
 					<h4>Research Interests</h4>
 					<ul>
 						
@@ -144,6 +139,10 @@
 							<li>gender disparity</li>
 						
 					</ul>
+				</div>
+				<div>
+					<iframe src="/print" style="display: none;" name="getpdf_frame"></iframe>
+					<button class="button-light" onclick="frames['getpdf_frame'].print()">Print full CV</button>
 				</div>
 			</div>
 		</div>
@@ -472,7 +471,7 @@
 	
 	<section class="resume-section p-3 p-lg-5 d-flex d-column" id="contacts">
 	<div class="my-auto page-content">
-		<div class="resume-item d-flex flex-column flex-md-row justify-content-md-between">
+		<div class="resume-item d-flex flex-column flex-md-row">
 			<div class="mb-5" id="contact-information">
 				<table>
 					<tr>
@@ -548,7 +547,6 @@
 						</td>
 					</tr>
 				</table>
-
 			</div>
 			<div class="mb-5" id="contact-map">
 			</div>

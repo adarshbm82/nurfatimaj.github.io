@@ -131,6 +131,7 @@ section.resume-section .resume-item .resume-date {
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
+  #about_content { max-width: 50%; }
 }
 
 @media (min-width: 992px) {
@@ -142,11 +143,6 @@ section.resume-section .resume-item .resume-date {
   #blogs-content {
     padding-right: var(--tagcloud-width) !important;
   }
-}
-
-@media (min-width: 992px) {
-  #about_card { min-width: 45%; border-right-width: thick; }
-  #about_card { margin-right: 6rem; }
 }
 
 img {
