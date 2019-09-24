@@ -78,10 +78,14 @@
       var canvas = document.getElementById('about');
       if (isVisibleInViewport(canvas)) {
         $('.nav-title').addClass('d-lg-none');
+        $('.nav-title').addClass('d-none');
         $('.nav-title').removeClass('d-lg-block');
+        $('.nav-title').removeClass('d-block');
       } else {
         $('.nav-title').removeClass('d-lg-none');
+        $('.nav-title').removeClass('d-none');
         $('.nav-title').addClass('d-lg-block');
+        $('.nav-title').addClass('d-block');
       }
     });
   } else {
