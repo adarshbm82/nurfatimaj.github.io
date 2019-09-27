@@ -18,11 +18,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: rgba(var(--text-highlight-colour), 0.5);
+  color: rgba(var(--text-highlight-colour), 0.8);
 }
 
 a:hover, a:focus, a:active {
-  color: rgba(var(--text-highlight-colour), 0.75);
+  color: rgba(var(--text-highlight-colour), 1);
 }
 
 .button-light {
