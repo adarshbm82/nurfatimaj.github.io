@@ -1,8 +1,6 @@
 :root {
   --tag-height: 26px;
   --arrow-size: 10px;
-  --tag-border-width: 1px;
-  --arrow-size-diff: calc(var(--tag-border-width) / 2);
 }
 .p-0{
   margin: 0 auto;
@@ -35,7 +33,6 @@ div.skills-heading{
 
 
 /* From https://codepen.io/wbeeftink/pen/dIaDH */
-
 .tags {
   font: 12px/1.5 'PT Sans', serif;
   list-style: none;
@@ -47,7 +44,6 @@ div.skills-heading{
 .tags li {
   float: left;
 }
-
 
 .tag {
   background: rgba(var(--text-highlight-colour), var(--tag-colour-intensity));

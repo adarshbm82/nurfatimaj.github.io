@@ -5,6 +5,7 @@
   --text-main-colour: 134, 142, 150;
   --text-heading-colour: 52, 58, 64;
   --button-main-colour: 204, 230, 255;
+  --tag-colour-intensity: 0.5;
 }
 
 body {
