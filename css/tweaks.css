@@ -50,79 +50,49 @@ div.skills-heading{
 
 
 .tag {
-  background: var(--bg-main-colour);
+  background: rgba(var(--text-highlight-colour), var(--tag-colour-intensity));
   border-radius: 3px 0 0 3px;
-  color: rgba(var(--text-main-colour), 0.75);
-  border-color: rgba(var(--text-highlight-colour), 0.75) transparent rgba(var(--text-highlight-colour), 0.75) rgba(var(--text-highlight-colour), 0.75);
-  border-width: var(--tag-border-width);
-  border-style: solid;
-  display: inline-block ;
+  color: rgba(255, 255, 255, 1);
+  display: inline-block;
   height: var(--tag-height);
   line-height: var(--tag-height);
-  padding: 0 20px 0 23px;
+  padding: 0 var(--tag-height) 0 var(--tag-height);
   position: relative;
-  margin: 0 10px 10px 0;
+  margin: 0 calc(var(--tag-height) / 2) calc(var(--tag-height) / 2) 0;
   text-decoration: none;
   -webkit-transition: color 0.2s;
 }
 
 .tag::before {
-  background: var(--bg-main-colour);
-  width: 0;
-  height: 0;
-  content: '';
-  position: absolute;
-  top: calc(var(--tag-border-width) * -1);
-  right: calc(var(--tag-border-width) * -1);
-  border-top: calc(var(--tag-height) / 2) solid var(--bg-main-colour);
-  border-left: var(--arrow-size) solid rgba(var(--text-highlight-colour), 0.75);
-  border-bottom: calc(var(--tag-height) / 2 + 0.5px) solid var(--bg-main-colour);
-}
-
-.tag::after {
-  width: 0;
-  height: 0;
-  content: '';
-  position: absolute;
-  top: 0;
-  right: var(--tag-border-width);
-  border-top: calc(var(--tag-height) / 2 - var(--arrow-size-diff) ) solid transparent;
-  border-left: calc(var(--arrow-size) - var(--arrow-size-diff) * 3 ) solid var(--bg-main-colour);
-  border-bottom: calc(var(--tag-height) / 2 - var(--arrow-size-diff) ) solid transparent;
-}
-
-
-
-/*.tag::before {
-  background: #fff;
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: calc(var(--tag-height) / 2);
   box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
   content: '';
-  height: 6px;
-  left: 10px;
+  height: calc(var(--tag-height) / 4);
+  left: calc(var(--tag-height) / 2);
   position: absolute;
-  width: 6px;
+  width: calc(var(--tag-height) / 4);
   top: 10px;
 }
 
 .tag::after {
   background: var(--bg-main-colour);
-  border-bottom: 13px solid transparent;
-  border-left: 10px solid transparent;
-  border-top: 13px solid transparent;
+  border-bottom: calc(var(--tag-height) / 2 + 0.4px) solid transparent;
+  border-right: var(--arrow-size) solid rgba(var(--text-highlight-colour), var(--tag-colour-intensity));
+  border-top: calc(var(--tag-height) / 2) solid transparent;
   content: '';
   position: absolute;
-  right: 0;
   top: 0;
-}*/
+  left: 0;
+}
 
 .tag:hover {
-  background-color: rgba(0, 51, 102, 1);
+  background-color: rgba(var(--text-highlight-colour), 1);
   color: white;
 }
 
 .tag:hover::after {
-   border-left-color: rgba(0, 51, 102, 1);
+   border-right-color: rgba(var(--text-highlight-colour), 1);
 }
 
 .project-fact{
