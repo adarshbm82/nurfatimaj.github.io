@@ -15,7 +15,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: rgba(var(--text-heading-colour), 0.75);
+    color: rgba(var(--text-highlight-colour), 0.75);
   }
 
   a {
