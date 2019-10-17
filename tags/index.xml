@@ -1,67 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Nurfatima Jandarova</title>
-    <link>http://www.nurfatimaj.com/tags/</link>
-    <description>Recent content in Tags on Nurfatima Jandarova</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 22 Aug 2019 20:00:00 +0600</lastBuildDate>
-    
-	<atom:link href="http://www.nurfatimaj.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+    <title>Tags | Nurfatima Jandarova</title>
+    <link>https://nurfatimaj.com/tags/</link>
+      <atom:link href="https://nurfatimaj.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 17 Aug 2019 16:33:42 +0600</lastBuildDate>
+    <image>
+      <url>https://nurfatimaj.com/img/icon-192.png</url>
+      <title>Tags</title>
+      <link>https://nurfatimaj.com/tags/</link>
+    </image>
     
     <item>
       <title>bash script</title>
-      <link>http://www.nurfatimaj.com/tags/bash-script/</link>
-      <pubDate>Thu, 22 Aug 2019 20:00:00 +0600</pubDate>
-      
-      <guid>http://www.nurfatimaj.com/tags/bash-script/</guid>
+      <link>https://nurfatimaj.com/tags/bash-script/</link>
+      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
+      <guid>https://nurfatimaj.com/tags/bash-script/</guid>
       <description></description>
     </item>
     
     <item>
       <title>documentation</title>
-      <link>http://www.nurfatimaj.com/tags/documentation/</link>
-      <pubDate>Thu, 22 Aug 2019 20:00:00 +0600</pubDate>
-      
-      <guid>http://www.nurfatimaj.com/tags/documentation/</guid>
+      <link>https://nurfatimaj.com/tags/documentation/</link>
+      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
+      <guid>https://nurfatimaj.com/tags/documentation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>git</title>
-      <link>http://www.nurfatimaj.com/tags/git/</link>
-      <pubDate>Thu, 22 Aug 2019 20:00:00 +0600</pubDate>
-      
-      <guid>http://www.nurfatimaj.com/tags/git/</guid>
+      <link>https://nurfatimaj.com/tags/git/</link>
+      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
+      <guid>https://nurfatimaj.com/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>http://www.nurfatimaj.com/tags/markdown/</link>
-      <pubDate>Thu, 22 Aug 2019 20:00:00 +0600</pubDate>
-      
-      <guid>http://www.nurfatimaj.com/tags/markdown/</guid>
+      <link>https://nurfatimaj.com/tags/markdown/</link>
+      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
+      <guid>https://nurfatimaj.com/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>software</title>
-      <link>http://www.nurfatimaj.com/tags/software/</link>
-      <pubDate>Thu, 22 Aug 2019 20:00:00 +0600</pubDate>
-      
-      <guid>http://www.nurfatimaj.com/tags/software/</guid>
+      <link>https://nurfatimaj.com/tags/software/</link>
+      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
+      <guid>https://nurfatimaj.com/tags/software/</guid>
       <description></description>
     </item>
     
     <item>
       <title>text parsing</title>
-      <link>http://www.nurfatimaj.com/tags/text-parsing/</link>
-      <pubDate>Thu, 22 Aug 2019 20:00:00 +0600</pubDate>
-      
-      <guid>http://www.nurfatimaj.com/tags/text-parsing/</guid>
+      <link>https://nurfatimaj.com/tags/text-parsing/</link>
+      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
+      <guid>https://nurfatimaj.com/tags/text-parsing/</guid>
       <description></description>
     </item>
     

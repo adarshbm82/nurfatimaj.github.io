@@ -1,23 +1,75 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>documentation on Nurfatima Jandarova</title>
-    <link>http://www.nurfatimaj.com/tags/documentation/</link>
-    <description>Recent content in documentation on Nurfatima Jandarova</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 22 Aug 2019 20:00:00 +0600</lastBuildDate>
-    
-	<atom:link href="http://www.nurfatimaj.com/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
-    
+    <title>documentation | Nurfatima Jandarova</title>
+    <link>https://nurfatimaj.com/tags/documentation/</link>
+      <atom:link href="https://nurfatimaj.com/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <description>documentation</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 17 Aug 2019 16:33:42 +0600</lastBuildDate>
+    <image>
+      <url>https://nurfatimaj.com/img/icon-192.png</url>
+      <title>documentation</title>
+      <link>https://nurfatimaj.com/tags/documentation/</link>
+    </image>
     
     <item>
       <title>Automatic documentation</title>
-      <link>http://www.nurfatimaj.com/blog/tech-fun/automatic-documentation/</link>
-      <pubDate>Thu, 22 Aug 2019 20:00:00 +0600</pubDate>
-      
-      <guid>http://www.nurfatimaj.com/blog/tech-fun/automatic-documentation/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;At the beginning of PhD I used to have at most one project at a time. Keeping track of things was easy. Along the way, I accumulated a portfolio of projects. For each of them I write tons of codes (partly because my programmer sister has taught me that having one big file with everything is bad). One day I found myself looking at my own code of three months earlier and spending half a day to retrace its logic. There were dozens of errors before I was able to run everything smoothly without forgetting some annoying little detail.&lt;/strong&gt;&lt;/p&gt;</description>
+      <link>https://nurfatimaj.com/post/tech-fun/automatic-documentation/</link>
+      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
+      <guid>https://nurfatimaj.com/post/tech-fun/automatic-documentation/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;At the beginning of PhD I used to have at most one project at a time. Keeping track of things was easy. Along the way, I accumulated a portfolio of projects. For each of them I write tons of codes (partly because my programmer sister has taught me that having one big file with everything is bad). One day I found myself looking at my own code of three months earlier and spending half a day to retrace its logic. There were dozens of errors before I was able to run everything smoothly without forgetting some annoying little detail.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Then it became clear to me that I need to keep a proper documentation. Hopefully, it is also helpful when one day the papers get published. Be it couple of files, I could have done it all manually. Or maybe not&amp;hellip; Just the thought that I would need to keep track of twice as many documents sends me to shiver. Search for some ready solution did not yield much results: either my target programming languages are too &amp;ldquo;simple&amp;rdquo;, or the output is not what I was looking for.&lt;/p&gt;
+
+&lt;p&gt;After a little thinking it struck me that automatic documentation is nothing more than a text parsing exercise. So I set out to write my own script. It searches for all new or recently modified code files in my project folder, parses the text and pastes it to a markdown file in my documentation subfolder. In this project I rely a lot on git version control and remote repository that keeps all important code files.&lt;/p&gt;
+
+&lt;h2 id=&#34;technical-bits&#34;&gt;Technical bits&lt;/h2&gt;
+
+&lt;h3 id=&#34;code-structure&#34;&gt;Code structure&lt;/h3&gt;
+
+&lt;p&gt;The benefit of having an automatic documentation generation script is that I can keep all documentation-relevant information inside the code file. Then keeping documentation up-to-date is only a matter of updating comments inside the code file.&lt;/p&gt;
+
+&lt;h3 id=&#34;special-comment&#34;&gt;Special comment&lt;/h3&gt;
+
+&lt;p&gt;Not all comments are meant to be inside a documentation file. Detecting the relevant code blocks is solved by including a special comment block (&lt;code&gt;#&#39;&lt;/code&gt; or &lt;code&gt;*&#39;&lt;/code&gt; for Stata) which  I have borrowed from R. So all lines that start with the special sign will be part of the documentation file.&lt;/p&gt;
+
+&lt;h3 id=&#34;parsing-and-outputing&#34;&gt;Parsing and outputing&lt;/h3&gt;
+
+&lt;p&gt;After detecting the special comment block, the script is ridiculously simple. Basic idea is to strip away the special comment sign and simply copy the rest of the text into a markdown file. Of course, for this to work, the documentation comment block should follow a simple &lt;a href=&#34;https://www.markdownguide.org/cheat-sheet&#34; target=&#34;_blank&#34;&gt;markdown syntax&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;My documentation script applies additional rules to certain lines, which, again borrowing from R, are identified with special tags (for example, &lt;code&gt;@title&lt;/code&gt; for document title). These rules work by identifying if a line starts with one of the special tags, stripping the tag away and outputing the rest of the text in a desired way. For example, when a line starts with &lt;code&gt;@title&lt;/code&gt;, I insert to the title text hyperlink to the actual code file. The linking is possible because I am using git version control with a remote repository.&lt;/p&gt;
+
+&lt;p&gt;To a more technically inclined reader, all that my script does here is continuously apply &lt;code&gt;sed&lt;/code&gt; to the extracted lines and &lt;code&gt;echo&lt;/code&gt; the output into a markdown file.&lt;/p&gt;
+
+&lt;h3 id=&#34;input&#34;&gt;Input&lt;/h3&gt;
+
+&lt;p&gt;The script works both with single code file and with a project folder that contains the code files. That is, it is really easy to mass generate documentation files.&lt;/p&gt;
+
+&lt;p&gt;However, not all the codes in the folder need documentation; for example, a script from workshop I use as a reference. My script relies on git version control in deciding which files are relevant: if it is controlled by git, then it is worth a documentation.&lt;/p&gt;
+
+&lt;h3 id=&#34;publishing&#34;&gt;Publishing&lt;/h3&gt;
+
+&lt;p&gt;Since I am using git and remote repository, I am also using wiki submodule to publish the documentation files. While GitHub requires public repository for wiki functionality to work, Bitbucket allows it on private repositories too. The path to the documentation files inside wiki follows is similar to the code file path inside project directory.&lt;/p&gt;
+
+&lt;h3 id=&#34;if-i-have-time-in-the-future&#34;&gt;If I have time in the future, &amp;hellip;&lt;/h3&gt;
+
+&lt;p&gt;&amp;hellip; I would like to make the script a bit more flexible. Currently, my script parses and outputs documentation information line by line. Therefore, it can neither reorder sections nor augment with information found later under the same section heading. The output will look exactly the same way as the comment block. So, a nice extension would have been to extract all section-relevant data into a separate array and then output everything together. This would allow special comments organized like this&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#&#39; @section1
+#&#39; comment 1
+#&#39; 
+#&#39; @section2
+#&#39; comment 1
+#&#39;
+#&#39; @section1
+#&#39; comment 2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to appear correctly in the documentation file: two comments under section 1 and one comment under section 2.&lt;/p&gt;
+
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;Now, I can just click on respective wiki post and see all relevant information: usage, argument types and accepted values, description, input and output files. No need to traverse the code to make sense of it. Just work on the actual task.&lt;/p&gt;</description>
     </item>
     
   </channel>

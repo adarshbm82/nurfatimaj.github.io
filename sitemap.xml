@@ -3,91 +3,131 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.nurfatimaj.com/print/</loc>
-    <lastmod>2019-09-23T09:38:14+02:00</lastmod>
+    <loc>https://nurfatimaj.com/post/tech-fun/automatic-documentation/</loc>
+    <lastmod>2019-08-17T16:33:42+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.nurfatimaj.com/blog/tech-fun/automatic-documentation/</loc>
-    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
+    <loc>https://nurfatimaj.com/tags/bash-script/</loc>
+    <lastmod>2019-08-17T16:33:42+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.nurfatimaj.com/blog/</loc>
-    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
-    <priority>0</priority>
+    <loc>https://nurfatimaj.com/categories/</loc>
+    <lastmod>2019-08-17T16:33:42+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.nurfatimaj.com/categories/</loc>
-    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
-    <priority>0</priority>
+    <loc>https://nurfatimaj.com/tags/documentation/</loc>
+    <lastmod>2019-08-17T16:33:42+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.nurfatimaj.com/tags/</loc>
-    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
-    <priority>0</priority>
+    <loc>https://nurfatimaj.com/tags/git/</loc>
+    <lastmod>2019-08-17T16:33:42+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.nurfatimaj.com/tags/bash-script/</loc>
-    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
-    <priority>0</priority>
+    <loc>https://nurfatimaj.com/tags/markdown/</loc>
+    <lastmod>2019-08-17T16:33:42+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.nurfatimaj.com/tags/documentation/</loc>
-    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
-    <priority>0</priority>
+    <loc>https://nurfatimaj.com/</loc>
+    <lastmod>2019-10-17T01:30:47+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.nurfatimaj.com/tags/git/</loc>
-    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
-    <priority>0</priority>
+    <loc>https://nurfatimaj.com/tags/software/</loc>
+    <lastmod>2019-08-17T16:33:42+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.nurfatimaj.com/tags/markdown/</loc>
-    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
-    <priority>0</priority>
+    <loc>https://nurfatimaj.com/tags/</loc>
+    <lastmod>2019-08-17T16:33:42+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.nurfatimaj.com/tags/software/</loc>
-    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
-    <priority>0</priority>
+    <loc>https://nurfatimaj.com/categories/tech-fun/</loc>
+    <lastmod>2019-08-17T16:33:42+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.nurfatimaj.com/categories/tech-fun/</loc>
-    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
-    <priority>0</priority>
+    <loc>https://nurfatimaj.com/tags/text-parsing/</loc>
+    <lastmod>2019-08-17T16:33:42+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.nurfatimaj.com/tags/text-parsing/</loc>
-    <lastmod>2019-08-24T10:49:02+06:00</lastmod>
-    <priority>0</priority>
+    <loc>https://nurfatimaj.com/print/</loc>
+    <lastmod>2019-10-15T23:32:09+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.nurfatimaj.com/</loc>
-    <lastmod>2019-09-25T00:03:54+02:00</lastmod>
-    <priority>1</priority>
+    <loc>https://nurfatimaj.com/authors/admin/</loc>
+    <lastmod>2019-10-17T01:30:47+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.nurfatimaj.com/projects/</loc>
-    <lastmod>2019-08-15T09:57:24+06:00</lastmod>
-    <priority>0.9</priority>
+    <loc>https://nurfatimaj.com/publication_types/4/</loc>
+    <lastmod>2019-10-17T01:30:47+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.nurfatimaj.com/search/</loc>
-    <lastmod>2019-08-15T09:57:24+06:00</lastmod>
-    <priority>0.1</priority>
+    <loc>https://nurfatimaj.com/authors/aldo-rustichini/</loc>
+    <lastmod>2019-10-17T01:30:47+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nurfatimaj.com/authors/andrea-ichino/</loc>
+    <lastmod>2019-10-17T01:30:47+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nurfatimaj.com/authors/</loc>
+    <lastmod>2019-10-17T01:30:47+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nurfatimaj.com/publication/work-in-progress/uni-sorting-genetics/</loc>
+    <lastmod>2019-10-17T01:30:47+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nurfatimaj.com/authors/giulio-zanella/</loc>
+    <lastmod>2019-10-17T01:30:47+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nurfatimaj.com/publication/work-in-progress/measurement-edu-uk/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nurfatimaj.com/authors/johanna-reuter/</loc>
+    <lastmod>2019-10-17T01:30:47+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nurfatimaj.com/post/</loc>
+    <lastmod>2019-05-06T17:54:11+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nurfatimaj.com/publication_types/</loc>
+    <lastmod>2019-10-17T01:30:47+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nurfatimaj.com/publication/</loc>
+    <lastmod>2019-05-06T17:54:11+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nurfatimaj.com/talk/</loc>
+    <lastmod>2019-05-06T17:54:11+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nurfatimaj.com/publication/work-in-progress/edu-unemp/</loc>
   </url>
   
 </urlset>

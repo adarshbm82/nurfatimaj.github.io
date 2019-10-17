@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | Nurfatima Jandarova</title>
+    <link>https://nurfatimaj.com/authors/</link>
+      <atom:link href="https://nurfatimaj.com/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>https://nurfatimaj.com/img/icon-192.png</url>
+      <title>Authors</title>
+      <link>https://nurfatimaj.com/authors/</link>
+    </image>
+    
+    <item>
+      <title></title>
+      <link>https://nurfatimaj.com/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nurfatimaj.com/authors/admin/</guid>
+      <description>&lt;p&gt;Welcome!&lt;/p&gt;
+
+&lt;p&gt;I am a PhD student at the Department of Economics at the European University Institute.&lt;/p&gt;
+
+&lt;p&gt;My area of expertise is Applied Microeconometrics. My research is mainly focused on educational choices and their effects on labour market outcomes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Aldo Rustichini</title>
+      <link>https://nurfatimaj.com/authors/aldo-rustichini/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nurfatimaj.com/authors/aldo-rustichini/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Andrea Ichino</title>
+      <link>https://nurfatimaj.com/authors/andrea-ichino/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nurfatimaj.com/authors/andrea-ichino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Giulio Zanella</title>
+      <link>https://nurfatimaj.com/authors/giulio-zanella/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nurfatimaj.com/authors/giulio-zanella/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Johanna Reuter</title>
+      <link>https://nurfatimaj.com/authors/johanna-reuter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nurfatimaj.com/authors/johanna-reuter/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

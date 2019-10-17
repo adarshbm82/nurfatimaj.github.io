@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Nurfatima Jandarova</title>
-    <link>http://www.nurfatimaj.com/categories/</link>
-    <description>Recent content in Categories on Nurfatima Jandarova</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 22 Aug 2019 20:00:00 +0600</lastBuildDate>
-    
-	<atom:link href="http://www.nurfatimaj.com/categories/index.xml" rel="self" type="application/rss+xml" />
-    
+    <title>Categories | Nurfatima Jandarova</title>
+    <link>https://nurfatimaj.com/categories/</link>
+      <atom:link href="https://nurfatimaj.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <description>Categories</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 17 Aug 2019 16:33:42 +0600</lastBuildDate>
+    <image>
+      <url>https://nurfatimaj.com/img/icon-192.png</url>
+      <title>Categories</title>
+      <link>https://nurfatimaj.com/categories/</link>
+    </image>
     
     <item>
       <title>tech fun</title>
-      <link>http://www.nurfatimaj.com/categories/tech-fun/</link>
-      <pubDate>Thu, 22 Aug 2019 20:00:00 +0600</pubDate>
-      
-      <guid>http://www.nurfatimaj.com/categories/tech-fun/</guid>
+      <link>https://nurfatimaj.com/categories/tech-fun/</link>
+      <pubDate>Sat, 17 Aug 2019 16:33:42 +0600</pubDate>
+      <guid>https://nurfatimaj.com/categories/tech-fun/</guid>
       <description></description>
     </item>
     
