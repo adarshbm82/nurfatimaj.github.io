@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.6.14)  20 OCT 2019 16:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.6.14)  20 OCT 2019 16:36
 entering extended mode
 **./CV_Nurfatima_Jandarova.tex
 (CV_Nurfatima_Jandarova.tex
@@ -151,24 +151,42 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 5.
 
-No file CV_Nurfatima_Jandarova.aux.
+("C:\Users\labuv\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
+\Gm@cnth=\count98
+\Gm@cntv=\count99
+\c@Gm@tempcnt=\count100
+\Gm@bindingoffset=\dimen107
+\Gm@wd@mp=\dimen108
+\Gm@odd@mp=\dimen109
+\Gm@even@mp=\dimen110
+\Gm@layoutwidth=\dimen111
+\Gm@layoutheight=\dimen112
+\Gm@layouthoffset=\dimen113
+\Gm@layoutvoffset=\dimen114
+\Gm@dimlist=\toks15
+
+("C:\Users\labuv\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+cfg")) (CV_Nurfatima_Jandarova.aux)
 \openout1 = `CV_Nurfatima_Jandarova.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 \AtBeginShipoutBox=\box26
+
 ("C:\Users\labuv\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.sty
 "
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
@@ -186,19 +204,19 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ("C:\Users\labuv\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count98
-\scratchdimen=\dimen107
+\scratchcounter=\count101
+\scratchdimen=\dimen115
 \scratchbox=\box27
-\nofMPsegments=\count99
-\nofMParguments=\count100
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count101
-\MPscratchDim=\dimen108
-\MPnumerator=\count102
-\makeMPintoPDFobject=\count103
-\everyMPtoPDFconversion=\toks16
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen116
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
+\everyMPtoPDFconversion=\toks17
 )))
-Package hyperref Info: Link coloring ON on input line 10.
+Package hyperref Info: Link coloring ON on input line 11.
 
 ("C:\Users\labuv\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -208,60 +226,90 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count104
+\c@section@level=\count107
 )
-LaTeX Info: Redefining \ref on input line 10.
-LaTeX Info: Redefining \pageref on input line 10.
-LaTeX Info: Redefining \nameref on input line 10.
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
+ (CV_Nurfatima_Jandarova.out) (CV_Nurfatima_Jandarova.out)
 \@outlinefile=\write3
 \openout3 = `CV_Nurfatima_Jandarova.out'.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 12.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 12.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 12.
 
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 13.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 13.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 13.
 
 LaTeX Warning: No \author given.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 17.
+(Font)              <7> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 17.
+(Font)              <5> on input line 18.
 
-Overfull \hbox (63.27864pt too wide) in paragraph at lines 17--21
+Overfull \hbox (9.48906pt too wide) in paragraph at lines 28--34
 [][] 
  []
 
 
-Overfull \hbox (16.15346pt too wide) in paragraph at lines 27--33
+Overfull \hbox (9.48906pt too wide) in paragraph at lines 39--46
 [][] 
  []
 
 
-Overfull \hbox (70.38959pt too wide) in paragraph at lines 38--45
-[][] 
- []
-
-
-Overfull \hbox (151.00092pt too wide) in paragraph at lines 51--56
+Overfull \hbox (9.48906pt too wide) in paragraph at lines 52--57
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[1
 
-{C:/Users/labuv/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (22.32018pt too wide) in paragraph at lines 77--80
+Overfull \hbox (9.48906pt too wide) in paragraph at lines 77--80
 [][] 
  []
 
+[1
 
-Overfull \hbox (383.66809pt too wide) in paragraph at lines 96--102
+{C:/Users/labuv/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Overfull \hbox (9.48906pt too wide) in paragraph at lines 96--102
 [][] 
  []
 
@@ -274,33 +322,27 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
  (CV_Nurfatima_Jandarova.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
+Package rerunfilecheck Info: File `CV_Nurfatima_Jandarova.out' has not changed.
 
-
-Package rerunfilecheck Warning: File `CV_Nurfatima_Jandarova.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `CV_Nurfatima_Jandarova.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 4723 strings out of 492973
- 71176 string characters out of 3126692
- 159321 words of memory out of 3000000
- 8594 multiletter control sequences out of 15000+200000
+ 5177 strings out of 492973
+ 78115 string characters out of 3126692
+ 173585 words of memory out of 3000000
+ 9036 multiletter control sequences out of 15000+200000
  7933 words of font info for 28 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,8n,24p,239b,345s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,10n,32p,239b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/labuv/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb><C:/Users/labuv/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmr10.pfb><C:/Users/labuv/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/labuv/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on CV_Nurfatima_Jandarova.pdf (3 pages, 71139 bytes).
+Output written on CV_Nurfatima_Jandarova.pdf (3 pages, 70688 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
+ 72 PDF objects out of 1000 (max. 8388607)
  14 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
