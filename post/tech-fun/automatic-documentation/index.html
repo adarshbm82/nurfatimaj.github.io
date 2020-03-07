@@ -39,7 +39,7 @@
   
   
   
-  <meta name="theme-color" content="#2962ff">
+  <meta name="theme-color" content="hsl(339, 90%, 68%)">
   
 
   
@@ -60,8 +60,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
         
       
     
@@ -183,12 +183,12 @@
     window.cookieconsent.initialise({
       "palette": {
         "popup": {
-          "background": "#2962ff",
+          "background": "hsl(339, 90%, 68%)",
           "text": "#fff"
         },
         "button": {
           "background": "#fff",
-          "text": "#2962ff"
+          "text": "hsl(339, 90%, 68%)"
         }
       },
       "theme": "classic",
@@ -213,7 +213,7 @@
 
 </head>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="dark">
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -590,43 +590,24 @@
 
     <div class="article-style">
       <p><strong>At the beginning of PhD I used to have at most one project at a time. Keeping track of things was easy. Along the way, I accumulated a portfolio of projects. For each of them I write tons of codes (partly because my programmer sister has taught me that having one big file with everything is bad). One day I found myself looking at my own code of three months earlier and spending half a day to retrace its logic. There were dozens of errors before I was able to run everything smoothly without forgetting some annoying little detail.</strong></p>
-
 <p>Then it became clear to me that I need to keep a proper documentation. Hopefully, it is also helpful when one day the papers get published. Be it couple of files, I could have done it all manually. Or maybe not&hellip; Just the thought that I would need to keep track of twice as many documents sends me to shiver. Search for some ready solution did not yield much results: either my target programming languages are too &ldquo;simple&rdquo;, or the output is not what I was looking for.</p>
-
 <p>After a little thinking it struck me that automatic documentation is nothing more than a text parsing exercise. So I set out to write my own script. It searches for all new or recently modified code files in my project folder, parses the text and pastes it to a markdown file in my documentation subfolder. In this project I rely a lot on git version control and remote repository that keeps all important code files.</p>
-
 <h2 id="technical-bits">Technical bits</h2>
-
 <h3 id="code-structure">Code structure</h3>
-
 <p>The benefit of having an automatic documentation generation script is that I can keep all documentation-relevant information inside the code file. Then keeping documentation up-to-date is only a matter of updating comments inside the code file.</p>
-
 <h3 id="special-comment">Special comment</h3>
-
 <p>Not all comments are meant to be inside a documentation file. Detecting the relevant code blocks is solved by including a special comment block (<code>#'</code> or <code>*'</code> for Stata) which  I have borrowed from R. So all lines that start with the special sign will be part of the documentation file.</p>
-
 <h3 id="parsing-and-outputing">Parsing and outputing</h3>
-
-<p>After detecting the special comment block, the script is ridiculously simple. Basic idea is to strip away the special comment sign and simply copy the rest of the text into a markdown file. Of course, for this to work, the documentation comment block should follow a simple <a href="https://www.markdownguide.org/cheat-sheet" target="_blank">markdown syntax</a>.</p>
-
+<p>After detecting the special comment block, the script is ridiculously simple. Basic idea is to strip away the special comment sign and simply copy the rest of the text into a markdown file. Of course, for this to work, the documentation comment block should follow a simple <a href="https://www.markdownguide.org/cheat-sheet">markdown syntax</a>.</p>
 <p>My documentation script applies additional rules to certain lines, which, again borrowing from R, are identified with special tags (for example, <code>@title</code> for document title). These rules work by identifying if a line starts with one of the special tags, stripping the tag away and outputing the rest of the text in a desired way. For example, when a line starts with <code>@title</code>, I insert to the title text hyperlink to the actual code file. The linking is possible because I am using git version control with a remote repository.</p>
-
 <p>To a more technically inclined reader, all that my script does here is continuously apply <code>sed</code> to the extracted lines and <code>echo</code> the output into a markdown file.</p>
-
 <h3 id="input">Input</h3>
-
 <p>The script works both with single code file and with a project folder that contains the code files. That is, it is really easy to mass generate documentation files.</p>
-
 <p>However, not all the codes in the folder need documentation; for example, a script from workshop I use as a reference. My script relies on git version control in deciding which files are relevant: if it is controlled by git, then it is worth a documentation.</p>
-
 <h3 id="publishing">Publishing</h3>
-
 <p>Since I am using git and remote repository, I am also using wiki submodule to publish the documentation files. While GitHub requires public repository for wiki functionality to work, Bitbucket allows it on private repositories too. The path to the documentation files inside wiki follows is similar to the code file path inside project directory.</p>
-
-<h3 id="if-i-have-time-in-the-future">If I have time in the future, &hellip;</h3>
-
+<h3 id="if-i-have-time-in-the-future-">If I have time in the future, &hellip;</h3>
 <p>&hellip; I would like to make the script a bit more flexible. Currently, my script parses and outputs documentation information line by line. Therefore, it can neither reorder sections nor augment with information found later under the same section heading. The output will look exactly the same way as the comment block. So, a nice extension would have been to extract all section-relevant data into a separate array and then output everything together. This would allow special comments organized like this</p>
-
 <pre><code>#' @section1
 #' comment 1
 #' 
@@ -635,12 +616,8 @@
 #'
 #' @section1
 #' comment 2
-</code></pre>
-
-<p>to appear correctly in the documentation file: two comments under section 1 and one comment under section 2.</p>
-
+</code></pre><p>to appear correctly in the documentation file: two comments under section 1 and one comment under section 2.</p>
 <h2 id="summary">Summary</h2>
-
 <p>Now, I can just click on respective wiki post and see all relevant information: usage, argument types and accepted values, description, input and output files. No need to traverse the code to make sense of it. Just work on the actual task.</p>
     </div>
 
