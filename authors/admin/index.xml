@@ -69,7 +69,7 @@ myColourPalette &amp;lt;- c(&amp;#39;#67001f&amp;#39;,&amp;#39;#b2182b&amp;#39;,
   scale_colour_brewer(palette = &amp;#39;Set1&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Removed 21 rows containing missing values (geom_point).&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Removed 1 row(s) containing missing values (geom_path).&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://nurfatimaj.com/project/COVID-19/index_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nurfatimaj.com/project/covid-19/index_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df %&amp;gt;% mutate(positive_share = totale_attualmente_positivi/tamponi) %&amp;gt;% 
   ggplot(., aes(x = date, y = positive_share*100, colour = &amp;#39;Positive cases as a share of total tested&amp;#39;)) + 
   geom_point() + geom_line() + 
@@ -77,7 +77,7 @@ myColourPalette &amp;lt;- c(&amp;#39;#67001f&amp;#39;,&amp;#39;#b2182b&amp;#39;,
   theme(axis.text.x = element_text(angle = 90)) + 
   labs(x = &amp;#39;Date&amp;#39;, y = &amp;#39;%&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Removed 15 rows containing missing values (geom_point).&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://nurfatimaj.com/project/COVID-19/index_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nurfatimaj.com/project/covid-19/index_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;But it is still difficult to make conclusions because of selection issues.
 And increase in the share of positive cases in all tested may either of the two:&lt;/p&gt;
 &lt;ul&gt;
@@ -94,7 +94,7 @@ And increase in the share of positive cases in all tested may either of the two:
   labs(x = &amp;#39;Date&amp;#39;, y = &amp;#39;%&amp;#39;, colour = &amp;#39;&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Removed 73 rows containing missing values (geom_point).&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Removed 1 row(s) containing missing values (geom_path).&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://nurfatimaj.com/project/COVID-19/index_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nurfatimaj.com/project/covid-19/index_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df %&amp;gt;% group_by(regions) %&amp;gt;% arrange(date) %&amp;gt;% 
   mutate(new_death = deceduti - lag(deceduti, 1)) %&amp;gt;% 
   ungroup() %&amp;gt;% 
@@ -102,7 +102,7 @@ And increase in the share of positive cases in all tested may either of the two:
   scale_fill_manual(values = myColourPalette) + 
   labs(x = &amp;#39;Date&amp;#39;, y = &amp;#39;New death cases&amp;#39;, fill = &amp;#39;Regions&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Removed 21 rows containing missing values (position_stack).&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://nurfatimaj.com/project/COVID-19/index_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nurfatimaj.com/project/covid-19/index_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggsave(filename = &amp;#39;featured.png&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Saving 7 x 5 in image&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Removed 21 rows containing missing values (position_stack).&lt;/code&gt;&lt;/pre&gt;
