@@ -7,7 +7,7 @@
     <description>data-driven website</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 20 Oct 2019 17:45:00 +0200</lastBuildDate>
     <image>
-      <url>https://nurfatimaj.com/img/icon-192.png</url>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>data-driven website</title>
       <link>https://nurfatimaj.com/tags/data-driven-website/</link>
     </image>
@@ -30,8 +30,10 @@ The financial benefit of Hugo is that I can host it for free on GitHub; thus, on
 Personally, it feels that comparing Hugo to WordPress is like comparing LaTeX to Word.&lt;/p&gt;
 &lt;p&gt;While, it may be less user-friendly than WordPress, it would have only taken me couple of hours to have my site up and running.
 However, I needed a functionality not offered by ready-to-use themes. So, I needed some tweaking.&lt;/p&gt;
-&lt;h3 id=&#34;hugo-resumehttpsgithubcomeddiewebbhugo-resume&#34;&gt;&lt;a href=&#34;https://github.com/eddiewebb/hugo-resume&#34;&gt;hugo-resume&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;First, I was working with &lt;a href=&#34;https://github.com/eddiewebb/hugo-resume&#34;&gt;hugo-resume&lt;/a&gt; theme. It had the most important feature I needed: data-driven content.&lt;/p&gt;
+&lt;h3 id=&#34;hugo-resumehttpsgithubcomeddiewebbhugo-resume&#34;&gt;
+&lt;a href=&#34;https://github.com/eddiewebb/hugo-resume&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo-resume&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;First, I was working with 
+&lt;a href=&#34;https://github.com/eddiewebb/hugo-resume&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo-resume&lt;/a&gt; theme. It had the most important feature I needed: data-driven content.&lt;/p&gt;
 &lt;p&gt;But how do I get my CV as a pdf file? I had an idea. I could generate a second page that looks exactly like I want my CV document to look and simply print it to pdf in the browser.
 To make it a bit more explicit, I have also included a button in the home page that opens the printer dialogue attempting to print the CV page. All print dialogues should have &amp;lsquo;Save as PDF&amp;rsquo; option.&lt;/p&gt;
 &lt;p&gt;It worked, but it wasn&amp;rsquo;t a perfect solution.&lt;/p&gt;
@@ -40,7 +42,8 @@ To make it a bit more explicit, I have also included a button in the home page t
 &lt;li&gt;I have made so many tweaks to the theme that it basically became a completely new theme. Which meant that there are many places, where a potential bug could be sitting. Which meant maintenance would require quite a bit of my time.&lt;/li&gt;
 &lt;li&gt;Related to the previous one, I did not like the visual appeal of the original theme and had to add style changes as well. This of course increases probability of having a buggy code.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;hugo-academichttpsgithubcomgcushenhugo-academic&#34;&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic&#34;&gt;hugo-academic&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;hugo-academichttpsgithubcomgcushenhugo-academic&#34;&gt;
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo-academic&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;It is porbably the most popular theme on Hugo. And you can tell it from the rigour of the theme&amp;rsquo;s documentation. The developers have thought about many features.
 Except for the possibility of sending the website data into a beautiful pdf.&lt;/p&gt;
 &lt;p&gt;Tweaking this website is easy and difficult at the same time.&lt;/p&gt;

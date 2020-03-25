@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stata programming | Nurfatima Jandarova</title>
+    <link>/tags/stata-programming/</link>
+      <atom:link href="/tags/stata-programming/index.xml" rel="self" type="application/rss+xml" />
+    <description>stata programming</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 23 Aug 2019 20:30:25 +0600</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>stata programming</title>
+      <link>/tags/stata-programming/</link>
+    </image>
+    
+    <item>
+      <title>MI Evaluation in Stata</title>
+      <link>/post/research/mi-evaluation-in-stata/</link>
+      <pubDate>Fri, 23 Aug 2019 20:30:25 +0600</pubDate>
+      <guid>/post/research/mi-evaluation-in-stata/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Specifying an imputation model is quite difficult, especially in big, complex survey data. This makes model selection an important topic.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;And as everything else about multiple imputation, evaluation is also proving itself to be a very frustrating exercise. Thankfully, the book by 
+&lt;a href=&#34;https://stefvanbuuren.name/fimd/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;van Buuren (2018)&lt;/a&gt; gives a quick discussion of all information relevant to multiple imputation, including the evaluation design and metrics. Here I am trying to give a quick recap of concepts from the book with a focus on my understanding of practical implementation.&lt;/p&gt;
+&lt;h1 id=&#34;concept-recap&#34;&gt;Concept recap&lt;/h1&gt;
+&lt;h2 id=&#34;evaluation-design&#34;&gt;Evaluation design&lt;/h2&gt;
+&lt;p&gt;The book outlines three simulation designs for evaluation:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Resample observations from the original sample, estimate and aggregate at the end.&lt;/li&gt;
+&lt;li&gt;Resample observations, pretend different portions of the data are missing, impute and estimate, aggregate at the end.&lt;/li&gt;
+&lt;li&gt;Pretend different portions of the data are missing, impute and estimate, aggregate at the end.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;van Buuren advocates the second design as it addresses both sampling and missing data mechanisms, while first - only sampling, and third - only missing data mechanism. Currenlty, however, I have implemented the third design in a cross-validation setting.&lt;/p&gt;
+&lt;h2 id=&#34;evaluation-metrics&#34;&gt;Evaluation metrics&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Prediction accuracies: raw bias, percentage bias, root mean squared error.&lt;/li&gt;
+&lt;li&gt;Inference properties: coverage rate and average width.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Some papers on multiple imputation also look at the fraction of missing information.&lt;/p&gt;
+&lt;h1 id=&#34;stata-implementation&#34;&gt;Stata implementation&lt;/h1&gt;
+&lt;p&gt;Stata has a good universe of commands for 
+&lt;a href=&#34;https://www.stata.com/manuals13/mi.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;multiple imputation&lt;/a&gt;. Even though there are no off-the-shelf commands for evaluation, it is quite easy to program using &lt;code&gt;mi estimate&lt;/code&gt; command.&lt;/p&gt;
+&lt;h2 id=&#34;data-structure&#34;&gt;Data structure&lt;/h2&gt;
+&lt;p&gt;The working dataset is basically two datasets appended together: British Household Panel Survey (BHPS) and Understanding Society (UKHLS). The main outcome variable is college degree attainment from different types of higher education providers: traditional universities, former polytechnics, and other institutions. Let&amp;rsquo;s call these variables &lt;strong&gt;trad_uni&lt;/strong&gt;, &lt;strong&gt;poly&lt;/strong&gt;, &lt;strong&gt;non_trad_uni&lt;/strong&gt;. The type of university exists in BHPS, but not in UKHLS. The goal is to impute these three variables from BHPS into UKHLS. The main analysis model regresses these college degree variables on intelligence score interacted with year of birth. Intelligence scores on the other hand is available in UKHLS, but wasn&amp;rsquo;t asked in BHPS. Therefore, it is available for some BHPS observations that continued into UKHLS and answered cognitive ability questions.&lt;/p&gt;
+&lt;p&gt;The dataset is structured such that each imputed variable is added as a new variable (&lt;em&gt;wide&lt;/em&gt; setting). I test four models differing in regressors included. There are 100 imputations per model, totalling to 400 imputations for each variable.&lt;/p&gt;
+&lt;h2 id=&#34;statistics-of-interest&#34;&gt;Statistics of interest&lt;/h2&gt;
+&lt;p&gt;Evaluation is always done in comparison to some statistic of interest. Currently, I am using three alternatives&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sample average of college attainment&lt;/li&gt;
+&lt;li&gt;coefficient from regression of college degree attainment on intelligence scores&lt;/li&gt;
+&lt;li&gt;vector of coefficients from a similar regression but with interactions with year of birth of cohorts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Given the main analysis model, the third option is a natural statistic of interest; however, it is only available for a subset of BHPS observations. Sample average is a simple statistic that only requires the imputed variable itself, but is not a statistic of interest for this project.&lt;/p&gt;
+&lt;h2 id=&#34;custom-program&#34;&gt;Custom program&lt;/h2&gt;
+&lt;h3 id=&#34;defining-a-program&#34;&gt;Defining a program&lt;/h3&gt;
+&lt;p&gt;Instead of typing my Stata commands three times, I have decided to define a custom program. Actually, I started liking Stata&amp;rsquo;s &lt;code&gt;program define&lt;/code&gt;, especially because you could specify program&amp;rsquo;s &lt;code&gt;syntax&lt;/code&gt; making the use of the program much easier in the future.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34; data-lang=&#34;stata&#34;&gt;program define cv_eval_fold
+	syntax varlist(fv) [if] [in] [fw pw aw iw], maxs(integer) cur_fold(integer) fold_var(varname fv) [main_indepvars(varlist fv) suffix(string)]
+
+	...
+	
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Syntax explained:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cv_eval_fold&lt;/code&gt; accepts a varlist (allowing factor variables), sample restrictions through &lt;code&gt;if&lt;/code&gt; and &lt;code&gt;in&lt;/code&gt; conditions, and all types of weights.&lt;/li&gt;
+&lt;li&gt;It also accpets required options
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;maxs&lt;/code&gt; for number of imputation models,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cur_fold&lt;/code&gt; for the number of the current fold (the fold that is pretended to have missing observations),&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fold_var&lt;/code&gt; for the name of the variable that maps each observation to a fold number.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;There are two optional options
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;main_indepvars&lt;/code&gt; for the main regressors whose coefficients are the &amp;ldquo;statistics of interest&amp;rdquo;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;suffix&lt;/code&gt; for an abbrevation of statistic of interest.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some &amp;ldquo;hard-learned&amp;rdquo; lessons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;syntax&lt;/code&gt; cannot accept a specification &lt;code&gt;depvar indepvars&lt;/code&gt; instead of &lt;code&gt;varlist&lt;/code&gt;. But you can easily separate &lt;code&gt;varlist&lt;/code&gt; into &lt;code&gt;depvar&lt;/code&gt; and &lt;code&gt;indepvars&lt;/code&gt; using this command: &lt;code&gt;gettoken depvar indepvars : varlist&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Proper way to implement sample restrictions from syntax is to &lt;code&gt;marksample touse&lt;/code&gt; to flag included observations and then pass it to other commands in the following way: &lt;code&gt;reg `depvar&#39; `indepvars&#39; if `touse&#39;&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;Required numerical options do not accept default values. So, instead of specifying &lt;del&gt;&lt;code&gt;maxs(integer 1)&lt;/code&gt;&lt;/del&gt;, you should write &lt;code&gt;maxs(integer)&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;true-statistic&#34;&gt;&amp;ldquo;True&amp;rdquo; statistic&lt;/h3&gt;
+&lt;p&gt;Getting a &amp;ldquo;true statistic of interest&amp;rdquo;, i.e. the one with full information from training sample is easy. It is just coefficients from&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34; data-lang=&#34;stata&#34;&gt;reg `depvar&#39; `main_indepvars&#39; `indepvars&#39; if `touse&#39; [`weight&#39; `exp&#39;]
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;estimated-statistic&#34;&gt;Estimated statistic&lt;/h3&gt;
+&lt;p&gt;There is no need to manually run regressions using each imputation and then combining the estimates using Rubins&amp;rsquo; rules. We can just use Stata&amp;rsquo;s &lt;code&gt;mi estimate&lt;/code&gt; command, which already outputs the combined results.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34; data-lang=&#34;stata&#34;&gt;mi estimate, post imputations(`start&#39;/`end&#39;): reg `depvar&#39;_`cur_fold&#39; `main_indepvars&#39; `indepvars&#39;  if `touse&#39; [`weight&#39; `exp&#39;]
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
