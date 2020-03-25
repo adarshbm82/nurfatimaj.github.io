@@ -35,7 +35,7 @@ shape_dsn &amp;lt;- &amp;#39;~/Downloads/italian-maps-shapefiles/italy-with-regi
 df &amp;lt;- read_csv(data_file)
 shape &amp;lt;- read_sf(dsn = shape_dsn)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;It is also helpful to reorder the regions based on north-south scale.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df &amp;lt;- df %&amp;gt;% mutate(distance = sqrt(lat^2 + long^2), 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df &amp;lt;- df %&amp;gt;% mutate(distance = sqrt(lat^2 + long^2),
                     regions = fct_reorder(denominazione_regione, desc(distance)))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Since the hour information is useless, let’s remove it&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df &amp;lt;- df %&amp;gt;% mutate(date = date(data)) %&amp;gt;% select(-data)&lt;/code&gt;&lt;/pre&gt;
@@ -55,26 +55,26 @@ myColourPalette &amp;lt;- c(&amp;#39;#67001f&amp;#39;,&amp;#39;#b2182b&amp;#39;,
 &lt;div id=&#34;testing-activity-and-new-cases&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Testing activity and new cases&lt;/h3&gt;
 &lt;p&gt;The capacity to identify confirm cases is limited by the testing capacity; therefore, it helps to look at both testing and positive cases simultaneously, whether in absolute or relative terms.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df %&amp;gt;% select(date, regions, tamponi, nuovi_attualmente_positivi) %&amp;gt;% 
-  group_by(regions) %&amp;gt;% 
-  arrange(date) %&amp;gt;% 
-  mutate(new_tests = tamponi - lag(tamponi, 1)) %&amp;gt;% 
-  ungroup() %&amp;gt;% select(-tamponi) %&amp;gt;% 
-  gather(key = &amp;#39;variable&amp;#39;, value = &amp;#39;value&amp;#39;, -regions, -date) %&amp;gt;% 
-  mutate(variable = ifelse(variable == &amp;#39;new_tests&amp;#39;, &amp;#39;New tests&amp;#39;, &amp;#39;New positive cases&amp;#39;)) %&amp;gt;% 
-  ggplot(., aes(x = date, y = value/1000, colour = variable)) + geom_point() + geom_line() + 
-  facet_wrap(~regions, scales = &amp;#39;free_y&amp;#39;) + 
-  theme(axis.text.x = element_text(angle = 90)) + 
-  labs(x = &amp;#39;Date&amp;#39;, y = &amp;#39;thousands&amp;#39;, colour = &amp;#39;&amp;#39;) + 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df %&amp;gt;% select(date, regions, tamponi, nuovi_attualmente_positivi) %&amp;gt;%
+  group_by(regions) %&amp;gt;%
+  arrange(date) %&amp;gt;%
+  mutate(new_tests = tamponi - lag(tamponi, 1)) %&amp;gt;%
+  ungroup() %&amp;gt;% select(-tamponi) %&amp;gt;%
+  gather(key = &amp;#39;variable&amp;#39;, value = &amp;#39;value&amp;#39;, -regions, -date) %&amp;gt;%
+  mutate(variable = ifelse(variable == &amp;#39;new_tests&amp;#39;, &amp;#39;New tests&amp;#39;, &amp;#39;New positive cases&amp;#39;)) %&amp;gt;%
+  ggplot(., aes(x = date, y = value/1000, colour = variable)) + geom_point() + geom_line() +
+  facet_wrap(~regions, scales = &amp;#39;free_y&amp;#39;) +
+  theme(axis.text.x = element_text(angle = 90)) +
+  labs(x = &amp;#39;Date&amp;#39;, y = &amp;#39;thousands&amp;#39;, colour = &amp;#39;&amp;#39;) +
   scale_colour_brewer(palette = &amp;#39;Set1&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Removed 21 rows containing missing values (geom_point).&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Removed 1 row(s) containing missing values (geom_path).&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://nurfatimaj.com/project/covid-19/index_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df %&amp;gt;% mutate(positive_share = totale_attualmente_positivi/tamponi) %&amp;gt;% 
-  ggplot(., aes(x = date, y = positive_share*100, colour = &amp;#39;Positive cases as a share of total tested&amp;#39;)) + 
-  geom_point() + geom_line() + 
-  facet_wrap(~regions, scales = &amp;#39;free_y&amp;#39;) + 
-  theme(axis.text.x = element_text(angle = 90)) + 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df %&amp;gt;% mutate(positive_share = totale_attualmente_positivi/tamponi) %&amp;gt;%
+  ggplot(., aes(x = date, y = positive_share*100, colour = &amp;#39;Positive cases as a share of total tested&amp;#39;)) +
+  geom_point() + geom_line() +
+  facet_wrap(~regions, scales = &amp;#39;free_y&amp;#39;) +
+  theme(axis.text.x = element_text(angle = 90)) +
   labs(x = &amp;#39;Date&amp;#39;, y = &amp;#39;%&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Removed 15 rows containing missing values (geom_point).&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://nurfatimaj.com/project/covid-19/index_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
@@ -87,19 +87,19 @@ And increase in the share of positive cases in all tested may either of the two:
 &lt;/div&gt;
 &lt;div id=&#34;death-rate-and-new-death-cases&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Death rate and new death cases&lt;/h3&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df %&amp;gt;% mutate(death_rate = deceduti/totale_casi) %&amp;gt;% 
-  ggplot(., aes(x = date, y = death_rate*100, colour = &amp;#39;Death rate&amp;#39;)) + geom_point() + geom_line() + 
-  facet_wrap(~regions, scales = &amp;#39;fixed&amp;#39;) + 
-  theme(axis.text.x = element_text(angle = 90)) + 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df %&amp;gt;% mutate(death_rate = deceduti/totale_casi) %&amp;gt;%
+  ggplot(., aes(x = date, y = death_rate*100, colour = &amp;#39;Death rate&amp;#39;)) + geom_point() + geom_line() +
+  facet_wrap(~regions, scales = &amp;#39;fixed&amp;#39;) +
+  theme(axis.text.x = element_text(angle = 90)) +
   labs(x = &amp;#39;Date&amp;#39;, y = &amp;#39;%&amp;#39;, colour = &amp;#39;&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Removed 73 rows containing missing values (geom_point).&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Removed 1 row(s) containing missing values (geom_path).&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://nurfatimaj.com/project/covid-19/index_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df %&amp;gt;% group_by(regions) %&amp;gt;% arrange(date) %&amp;gt;% 
-  mutate(new_death = deceduti - lag(deceduti, 1)) %&amp;gt;% 
-  ungroup() %&amp;gt;% 
-  ggplot(., aes(x = date, y = new_death, fill = regions)) + geom_bar(position = &amp;#39;stack&amp;#39;, stat = &amp;#39;identity&amp;#39;) + 
-  scale_fill_manual(values = myColourPalette) + 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df %&amp;gt;% group_by(regions) %&amp;gt;% arrange(date) %&amp;gt;%
+  mutate(new_death = deceduti - lag(deceduti, 1)) %&amp;gt;%
+  ungroup() %&amp;gt;%
+  ggplot(., aes(x = date, y = new_death, fill = regions)) + geom_bar(position = &amp;#39;stack&amp;#39;, stat = &amp;#39;identity&amp;#39;) +
+  scale_fill_manual(values = myColourPalette) +
   labs(x = &amp;#39;Date&amp;#39;, y = &amp;#39;New death cases&amp;#39;, fill = &amp;#39;Regions&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Removed 21 rows containing missing values (position_stack).&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://nurfatimaj.com/project/covid-19/index_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
@@ -110,15 +110,15 @@ And increase in the share of positive cases in all tested may either of the two:
 &lt;div id=&#34;timeline-on-a-map&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Timeline on a map&lt;/h3&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ndays &amp;lt;- min(df$date) %--% max(df$date) / ddays(1) + 1
-map &amp;lt;- df_sf %&amp;gt;% 
-  mutate(death_rate = deceduti/totale_casi) %&amp;gt;% 
-  ggplot(.) + 
-  geom_sf(data = shape, fill = NA) + 
-  geom_sf(aes(color = death_rate*100, size = death_rate*100)) + 
-  theme_void() + 
-  labs(title = &amp;#39;Date: {frame_time}&amp;#39;, colour = &amp;#39;Death rate&amp;#39;, size = &amp;#39;Death rate&amp;#39;) + 
-  scale_colour_distiller(palette = &amp;#39;Spectral&amp;#39;) + 
-  transition_time(date) 
+map &amp;lt;- df_sf %&amp;gt;%
+  mutate(death_rate = deceduti/totale_casi) %&amp;gt;%
+  ggplot(.) +
+  geom_sf(data = shape, fill = NA) +
+  geom_sf(aes(color = death_rate*100, size = death_rate*100)) +
+  theme_void() +
+  labs(title = &amp;#39;Date: {frame_time}&amp;#39;, colour = &amp;#39;Death rate&amp;#39;, size = &amp;#39;Death rate&amp;#39;) +
+  scale_colour_distiller(palette = &amp;#39;Spectral&amp;#39;) +
+  transition_time(date)
 #animate(map, nframes = 30, renderer = gifski_renderer(&amp;#39;map_png/map_anim.gif&amp;#39;))
 animate(map, nframes = ndays, fps = 30, renderer = file_renderer(&amp;#39;map_png/&amp;#39;, overwrite = TRUE))
 gifski::gifski(list.files(&amp;#39;map_png/&amp;#39;, full.names = &amp;#39;TRUE&amp;#39;), gif_file = &amp;#39;map_anim.gif&amp;#39;)&lt;/code&gt;&lt;/pre&gt;

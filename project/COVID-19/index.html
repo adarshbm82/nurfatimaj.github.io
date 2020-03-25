@@ -755,7 +755,7 @@ shape_dsn &lt;- &#39;~/Downloads/italian-maps-shapefiles/italy-with-regions/&#39
 df &lt;- read_csv(data_file)
 shape &lt;- read_sf(dsn = shape_dsn)</code></pre>
 <p>It is also helpful to reorder the regions based on north-south scale.</p>
-<pre class="r"><code>df &lt;- df %&gt;% mutate(distance = sqrt(lat^2 + long^2), 
+<pre class="r"><code>df &lt;- df %&gt;% mutate(distance = sqrt(lat^2 + long^2),
                     regions = fct_reorder(denominazione_regione, desc(distance)))</code></pre>
 <p>Since the hour information is useless, let’s remove it</p>
 <pre class="r"><code>df &lt;- df %&gt;% mutate(date = date(data)) %&gt;% select(-data)</code></pre>
@@ -775,26 +775,26 @@ myColourPalette &lt;- c(&#39;#67001f&#39;,&#39;#b2182b&#39;,&#39;#d6604d&#39;,&#
 <div id="testing-activity-and-new-cases" class="section level3">
 <h3>Testing activity and new cases</h3>
 <p>The capacity to identify confirm cases is limited by the testing capacity; therefore, it helps to look at both testing and positive cases simultaneously, whether in absolute or relative terms.</p>
-<pre class="r"><code>df %&gt;% select(date, regions, tamponi, nuovi_attualmente_positivi) %&gt;% 
-  group_by(regions) %&gt;% 
-  arrange(date) %&gt;% 
-  mutate(new_tests = tamponi - lag(tamponi, 1)) %&gt;% 
-  ungroup() %&gt;% select(-tamponi) %&gt;% 
-  gather(key = &#39;variable&#39;, value = &#39;value&#39;, -regions, -date) %&gt;% 
-  mutate(variable = ifelse(variable == &#39;new_tests&#39;, &#39;New tests&#39;, &#39;New positive cases&#39;)) %&gt;% 
-  ggplot(., aes(x = date, y = value/1000, colour = variable)) + geom_point() + geom_line() + 
-  facet_wrap(~regions, scales = &#39;free_y&#39;) + 
-  theme(axis.text.x = element_text(angle = 90)) + 
-  labs(x = &#39;Date&#39;, y = &#39;thousands&#39;, colour = &#39;&#39;) + 
+<pre class="r"><code>df %&gt;% select(date, regions, tamponi, nuovi_attualmente_positivi) %&gt;%
+  group_by(regions) %&gt;%
+  arrange(date) %&gt;%
+  mutate(new_tests = tamponi - lag(tamponi, 1)) %&gt;%
+  ungroup() %&gt;% select(-tamponi) %&gt;%
+  gather(key = &#39;variable&#39;, value = &#39;value&#39;, -regions, -date) %&gt;%
+  mutate(variable = ifelse(variable == &#39;new_tests&#39;, &#39;New tests&#39;, &#39;New positive cases&#39;)) %&gt;%
+  ggplot(., aes(x = date, y = value/1000, colour = variable)) + geom_point() + geom_line() +
+  facet_wrap(~regions, scales = &#39;free_y&#39;) +
+  theme(axis.text.x = element_text(angle = 90)) +
+  labs(x = &#39;Date&#39;, y = &#39;thousands&#39;, colour = &#39;&#39;) +
   scale_colour_brewer(palette = &#39;Set1&#39;)</code></pre>
 <pre><code>## Warning: Removed 21 rows containing missing values (geom_point).</code></pre>
 <pre><code>## Warning: Removed 1 row(s) containing missing values (geom_path).</code></pre>
 <p><img src="/project/covid-19/index_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
-<pre class="r"><code>df %&gt;% mutate(positive_share = totale_attualmente_positivi/tamponi) %&gt;% 
-  ggplot(., aes(x = date, y = positive_share*100, colour = &#39;Positive cases as a share of total tested&#39;)) + 
-  geom_point() + geom_line() + 
-  facet_wrap(~regions, scales = &#39;free_y&#39;) + 
-  theme(axis.text.x = element_text(angle = 90)) + 
+<pre class="r"><code>df %&gt;% mutate(positive_share = totale_attualmente_positivi/tamponi) %&gt;%
+  ggplot(., aes(x = date, y = positive_share*100, colour = &#39;Positive cases as a share of total tested&#39;)) +
+  geom_point() + geom_line() +
+  facet_wrap(~regions, scales = &#39;free_y&#39;) +
+  theme(axis.text.x = element_text(angle = 90)) +
   labs(x = &#39;Date&#39;, y = &#39;%&#39;)</code></pre>
 <pre><code>## Warning: Removed 15 rows containing missing values (geom_point).</code></pre>
 <p><img src="/project/covid-19/index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
@@ -807,19 +807,19 @@ And increase in the share of positive cases in all tested may either of the two:
 </div>
 <div id="death-rate-and-new-death-cases" class="section level3">
 <h3>Death rate and new death cases</h3>
-<pre class="r"><code>df %&gt;% mutate(death_rate = deceduti/totale_casi) %&gt;% 
-  ggplot(., aes(x = date, y = death_rate*100, colour = &#39;Death rate&#39;)) + geom_point() + geom_line() + 
-  facet_wrap(~regions, scales = &#39;fixed&#39;) + 
-  theme(axis.text.x = element_text(angle = 90)) + 
+<pre class="r"><code>df %&gt;% mutate(death_rate = deceduti/totale_casi) %&gt;%
+  ggplot(., aes(x = date, y = death_rate*100, colour = &#39;Death rate&#39;)) + geom_point() + geom_line() +
+  facet_wrap(~regions, scales = &#39;fixed&#39;) +
+  theme(axis.text.x = element_text(angle = 90)) +
   labs(x = &#39;Date&#39;, y = &#39;%&#39;, colour = &#39;&#39;)</code></pre>
 <pre><code>## Warning: Removed 73 rows containing missing values (geom_point).</code></pre>
 <pre><code>## Warning: Removed 1 row(s) containing missing values (geom_path).</code></pre>
 <p><img src="/project/covid-19/index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
-<pre class="r"><code>df %&gt;% group_by(regions) %&gt;% arrange(date) %&gt;% 
-  mutate(new_death = deceduti - lag(deceduti, 1)) %&gt;% 
-  ungroup() %&gt;% 
-  ggplot(., aes(x = date, y = new_death, fill = regions)) + geom_bar(position = &#39;stack&#39;, stat = &#39;identity&#39;) + 
-  scale_fill_manual(values = myColourPalette) + 
+<pre class="r"><code>df %&gt;% group_by(regions) %&gt;% arrange(date) %&gt;%
+  mutate(new_death = deceduti - lag(deceduti, 1)) %&gt;%
+  ungroup() %&gt;%
+  ggplot(., aes(x = date, y = new_death, fill = regions)) + geom_bar(position = &#39;stack&#39;, stat = &#39;identity&#39;) +
+  scale_fill_manual(values = myColourPalette) +
   labs(x = &#39;Date&#39;, y = &#39;New death cases&#39;, fill = &#39;Regions&#39;)</code></pre>
 <pre><code>## Warning: Removed 21 rows containing missing values (position_stack).</code></pre>
 <p><img src="/project/covid-19/index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
@@ -830,15 +830,15 @@ And increase in the share of positive cases in all tested may either of the two:
 <div id="timeline-on-a-map" class="section level3">
 <h3>Timeline on a map</h3>
 <pre class="r"><code>ndays &lt;- min(df$date) %--% max(df$date) / ddays(1) + 1
-map &lt;- df_sf %&gt;% 
-  mutate(death_rate = deceduti/totale_casi) %&gt;% 
-  ggplot(.) + 
-  geom_sf(data = shape, fill = NA) + 
-  geom_sf(aes(color = death_rate*100, size = death_rate*100)) + 
-  theme_void() + 
-  labs(title = &#39;Date: {frame_time}&#39;, colour = &#39;Death rate&#39;, size = &#39;Death rate&#39;) + 
-  scale_colour_distiller(palette = &#39;Spectral&#39;) + 
-  transition_time(date) 
+map &lt;- df_sf %&gt;%
+  mutate(death_rate = deceduti/totale_casi) %&gt;%
+  ggplot(.) +
+  geom_sf(data = shape, fill = NA) +
+  geom_sf(aes(color = death_rate*100, size = death_rate*100)) +
+  theme_void() +
+  labs(title = &#39;Date: {frame_time}&#39;, colour = &#39;Death rate&#39;, size = &#39;Death rate&#39;) +
+  scale_colour_distiller(palette = &#39;Spectral&#39;) +
+  transition_time(date)
 #animate(map, nframes = 30, renderer = gifski_renderer(&#39;map_png/map_anim.gif&#39;))
 animate(map, nframes = ndays, fps = 30, renderer = file_renderer(&#39;map_png/&#39;, overwrite = TRUE))
 gifski::gifski(list.files(&#39;map_png/&#39;, full.names = &#39;TRUE&#39;), gif_file = &#39;map_anim.gif&#39;)</code></pre>
