@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fun facts | Nurfatima Jandarova</title>
+    <link>/tags/fun-facts/</link>
+      <atom:link href="/tags/fun-facts/index.xml" rel="self" type="application/rss+xml" />
+    <description>fun facts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 17 Aug 2019 17:25:46 +0600</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>fun facts</title>
+      <link>/tags/fun-facts/</link>
+    </image>
+    
+    <item>
+      <title>Genetics side effects: curious things I learned trying to fix data issues</title>
+      <link>/post/genetics/genetics-side-effects/</link>
+      <pubDate>Sat, 17 Aug 2019 17:25:46 +0600</pubDate>
+      <guid>/post/genetics/genetics-side-effects/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;Randomization is in the blood of all female species (human or not). Despite having two types of X chromosomes, every cell shuts down one of them randomly. This is the reason some female cats can have patchy fur and some women have patches of skin unable to sweat.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

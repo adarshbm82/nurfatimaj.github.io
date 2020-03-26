@@ -28,11 +28,10 @@
   
     
   
-  <meta name="description" content="Specifying an imputation model is quite difficult, especially in big, complex survey data. This makes model selection an important topic.
-And as everything else about multiple imputation, evaluation is also proving itself to be a very frustrating exercise. Thankfully, the book by van Buuren (2018) gives a quick discussion of all information relevant to multiple imputation, including the evaluation design and metrics. Here I am trying to give a quick recap of concepts from the book with a focus on my understanding of practical implementation.">
+  <meta name="description" content="PhD Candidate">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/research/mi-evaluation-in-stata/">
+  <link rel="alternate" hreflang="en-us" href="/tags/stata-programming/">
 
   
 
@@ -209,12 +208,14 @@ And as everything else about multiple imputation, evaluation is also proving its
 
 
   
+  <link rel="alternate" href="/tags/stata-programming/index.xml" type="application/rss+xml" title="Nurfatima Jandarova">
+  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu0278c7f29914ab484e878f9ad16081c2_19539_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0278c7f29914ab484e878f9ad16081c2_19539_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/post/research/mi-evaluation-in-stata/">
+  <link rel="canonical" href="/tags/stata-programming/">
 
   
   
@@ -228,66 +229,17 @@ And as everything else about multiple imputation, evaluation is also proving its
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Nurfatima Jandarova">
-  <meta property="og:url" content="/post/research/mi-evaluation-in-stata/">
-  <meta property="og:title" content="MI Evaluation in Stata | Nurfatima Jandarova">
-  <meta property="og:description" content="Specifying an imputation model is quite difficult, especially in big, complex survey data. This makes model selection an important topic.
-And as everything else about multiple imputation, evaluation is also proving itself to be a very frustrating exercise. Thankfully, the book by van Buuren (2018) gives a quick discussion of all information relevant to multiple imputation, including the evaluation design and metrics. Here I am trying to give a quick recap of concepts from the book with a focus on my understanding of practical implementation."><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="og:url" content="/tags/stata-programming/">
+  <meta property="og:title" content="stata programming | Nurfatima Jandarova">
+  <meta property="og:description" content="PhD Candidate"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
   
-    
-      <meta property="article:published_time" content="2019-08-23T20:30:25&#43;06:00">
-    
-    <meta property="article:modified_time" content="2019-10-17T03:25:33&#43;02:00">
+    <meta property="og:updated_time" content="2019-08-23T20:30:25&#43;06:00">
   
 
   
 
 
-    
-
-
-
-
-
-
-  
-
-
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "/post/research/mi-evaluation-in-stata/"
-  },
-  "headline": "MI Evaluation in Stata",
-  
-  "datePublished": "2019-08-23T20:30:25+06:00",
-  "dateModified": "2019-10-17T03:25:33+02:00",
-  
-  "author": {
-    "@type": "Person",
-    "name": "Nurfatima Jandarova"
-  },
-  
-  "publisher": {
-    "@type": "Organization",
-    "name": "Nurfatima Jandarova",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "/images/icon_hu0278c7f29914ab484e878f9ad16081c2_19539_192x192_fill_lanczos_center_2.png"
-    }
-  },
-  "description": "Specifying an imputation model is quite difficult, especially in big, complex survey data. This makes model selection an important topic.\nAnd as everything else about multiple imputation, evaluation is also proving itself to be a very frustrating exercise. Thankfully, the book by van Buuren (2018) gives a quick discussion of all information relevant to multiple imputation, including the evaluation design and metrics. Here I am trying to give a quick recap of concepts from the book with a focus on my understanding of practical implementation."
-}
-</script>
-
-  
-
-  
 
 
   
@@ -325,7 +277,7 @@ And as everything else about multiple imputation, evaluation is also proving its
 
 
 
-  <title>MI Evaluation in Stata | Nurfatima Jandarova</title>
+  <title>stata programming | Nurfatima Jandarova</title>
 
 </head>
 
@@ -624,8 +576,6 @@ And as everything else about multiple imputation, evaluation is also proving its
 </nav>
 
 
-  <article class="article">
-
   
 
 
@@ -643,282 +593,41 @@ And as everything else about multiple imputation, evaluation is also proving its
 
   
   
-  
-<div class="article-container pt-3">
-  <h1>MI Evaluation in Stata</h1>
-
-  
-
   
     
-
-
-
-<div class="article-metadata">
+  
+<div class="universal-wrapper pt-3">
+  <h1>stata programming</h1>
 
   
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    Oct 17, 2019
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    4 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/research/">research</a>, <a href="/categories/tech-fun/">tech fun</a></span>
-  
-
-  
-    
-
-  
-
-</div>
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   
 </div>
 
 
 
-  <div class="article-container">
+<div class="universal-wrapper">
+  
 
-    <div class="article-style">
-      <p><strong>Specifying an imputation model is quite difficult, especially in big, complex survey data. This makes model selection an important topic.</strong></p>
-<p>And as everything else about multiple imputation, evaluation is also proving itself to be a very frustrating exercise. Thankfully, the book by 
-<a href="https://stefvanbuuren.name/fimd/" target="_blank" rel="noopener">van Buuren (2018)</a> gives a quick discussion of all information relevant to multiple imputation, including the evaluation design and metrics. Here I am trying to give a quick recap of concepts from the book with a focus on my understanding of practical implementation.</p>
-<h1 id="concept-recap">Concept recap</h1>
-<h2 id="evaluation-design">Evaluation design</h2>
-<p>The book outlines three simulation designs for evaluation:</p>
-<ol>
-<li>Resample observations from the original sample, estimate and aggregate at the end.</li>
-<li>Resample observations, pretend different portions of the data are missing, impute and estimate, aggregate at the end.</li>
-<li>Pretend different portions of the data are missing, impute and estimate, aggregate at the end.</li>
-</ol>
-<p>van Buuren advocates the second design as it addresses both sampling and missing data mechanisms, while first - only sampling, and third - only missing data mechanism. Currenlty, however, I have implemented the third design in a cross-validation setting.</p>
-<h2 id="evaluation-metrics">Evaluation metrics</h2>
-<ol>
-<li>Prediction accuracies: raw bias, percentage bias, root mean squared error.</li>
-<li>Inference properties: coverage rate and average width.</li>
-</ol>
-<p>Some papers on multiple imputation also look at the fraction of missing information.</p>
-<h1 id="stata-implementation">Stata implementation</h1>
-<p>Stata has a good universe of commands for 
-<a href="https://www.stata.com/manuals13/mi.pdf" target="_blank" rel="noopener">multiple imputation</a>. Even though there are no off-the-shelf commands for evaluation, it is quite easy to program using <code>mi estimate</code> command.</p>
-<h2 id="data-structure">Data structure</h2>
-<p>The working dataset is basically two datasets appended together: British Household Panel Survey (BHPS) and Understanding Society (UKHLS). The main outcome variable is college degree attainment from different types of higher education providers: traditional universities, former polytechnics, and other institutions. Let&rsquo;s call these variables <strong>trad_uni</strong>, <strong>poly</strong>, <strong>non_trad_uni</strong>. The type of university exists in BHPS, but not in UKHLS. The goal is to impute these three variables from BHPS into UKHLS. The main analysis model regresses these college degree variables on intelligence score interacted with year of birth. Intelligence scores on the other hand is available in UKHLS, but wasn&rsquo;t asked in BHPS. Therefore, it is available for some BHPS observations that continued into UKHLS and answered cognitive ability questions.</p>
-<p>The dataset is structured such that each imputed variable is added as a new variable (<em>wide</em> setting). I test four models differing in regressors included. There are 100 imputations per model, totalling to 400 imputations for each variable.</p>
-<h2 id="statistics-of-interest">Statistics of interest</h2>
-<p>Evaluation is always done in comparison to some statistic of interest. Currently, I am using three alternatives</p>
-<ul>
-<li>sample average of college attainment</li>
-<li>coefficient from regression of college degree attainment on intelligence scores</li>
-<li>vector of coefficients from a similar regression but with interactions with year of birth of cohorts</li>
-</ul>
-<p>Given the main analysis model, the third option is a natural statistic of interest; however, it is only available for a subset of BHPS observations. Sample average is a simple statistic that only requires the imputed variable itself, but is not a statistic of interest for this project.</p>
-<h2 id="custom-program">Custom program</h2>
-<h3 id="defining-a-program">Defining a program</h3>
-<p>Instead of typing my Stata commands three times, I have decided to define a custom program. Actually, I started liking Stata&rsquo;s <code>program define</code>, especially because you could specify program&rsquo;s <code>syntax</code> making the use of the program much easier in the future.</p>
-<pre><code class="language-stata" data-lang="stata">program define cv_eval_fold
-	syntax varlist(fv) [if] [in] [fw pw aw iw], maxs(integer) cur_fold(integer) fold_var(varname fv) [main_indepvars(varlist fv) suffix(string)]
-
-	...
-	
-end
-</code></pre><p>Syntax explained:</p>
-<ul>
-<li><code>cv_eval_fold</code> accepts a varlist (allowing factor variables), sample restrictions through <code>if</code> and <code>in</code> conditions, and all types of weights.</li>
-<li>It also accpets required options
-<ul>
-<li><code>maxs</code> for number of imputation models,</li>
-<li><code>cur_fold</code> for the number of the current fold (the fold that is pretended to have missing observations),</li>
-<li><code>fold_var</code> for the name of the variable that maps each observation to a fold number.</li>
-</ul>
-</li>
-<li>There are two optional options
-<ul>
-<li><code>main_indepvars</code> for the main regressors whose coefficients are the &ldquo;statistics of interest&rdquo;,</li>
-<li><code>suffix</code> for an abbrevation of statistic of interest.</li>
-</ul>
-</li>
-</ul>
-<p>Some &ldquo;hard-learned&rdquo; lessons:</p>
-<ul>
-<li><code>syntax</code> cannot accept a specification <code>depvar indepvars</code> instead of <code>varlist</code>. But you can easily separate <code>varlist</code> into <code>depvar</code> and <code>indepvars</code> using this command: <code>gettoken depvar indepvars : varlist</code>.</li>
-<li>Proper way to implement sample restrictions from syntax is to <code>marksample touse</code> to flag included observations and then pass it to other commands in the following way: <code>reg `depvar' `indepvars' if `touse'</code>;</li>
-<li>Required numerical options do not accept default values. So, instead of specifying <del><code>maxs(integer 1)</code></del>, you should write <code>maxs(integer)</code>.</li>
-</ul>
-<h3 id="true-statistic">&ldquo;True&rdquo; statistic</h3>
-<p>Getting a &ldquo;true statistic of interest&rdquo;, i.e. the one with full information from training sample is easy. It is just coefficients from</p>
-<pre><code class="language-stata" data-lang="stata">reg `depvar' `main_indepvars' `indepvars' if `touse' [`weight' `exp']
-</code></pre><h3 id="estimated-statistic">Estimated statistic</h3>
-<p>There is no need to manually run regressions using each imputation and then combining the estimates using Rubins&rsquo; rules. We can just use Stata&rsquo;s <code>mi estimate</code> command, which already outputs the combined results.</p>
-<pre><code class="language-stata" data-lang="stata">mi estimate, post imputations(`start'/`end'): reg `depvar'_`cur_fold' `main_indepvars' `indepvars'  if `touse' [`weight' `exp']
-</code></pre>
+  
+  
+    
+    
+    
+    <div>
+      <h2><a href="/post/research/mi-evaluation-in-stata/" >MI Evaluation in Stata</a></h2>
+      <div class="article-style">
+        
+          Specifying an imputation model is quite difficult, especially in big, complex survey data. This makes model selection an important topic.
+And as everything else about multiple imputation, evaluation is also proving itself to be a very frustrating exercise. Thankfully, the book by van Buuren (2018) gives a quick discussion of all information relevant to multiple imputation, including the evaluation design and metrics. Here I am trying to give a quick recap of concepts from the book with a focus on my understanding of practical implementation.
+        
+      </div>
     </div>
-
-    
-
-
-
-
-
-<div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/multiple-imputation/">multiple imputation</a>
+
   
-  <a class="badge badge-light" href="/tags/stata-programming/">stata programming</a>
-  
-  <a class="badge badge-light" href="/tags/evaluation/">evaluation</a>
-  
-  <a class="badge badge-light" href="/tags/cross-validation/">cross-validation</a>
-  
+
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  <div class="media author-card content-widget-hr">
-    
-      
-      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hub78a8f85c0b4d7dc9a60fdc4c2478904_630585_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
-    
-
-    <div class="media-body">
-      <h5 class="card-title"><a href="/">Nurfatima Jandarova</a></h5>
-      <h6 class="card-subtitle">PhD Candidate</h6>
-      
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-    <li>
-      <a href="mailto:Nurfatima.Jandarova%20[at]%20EUI.eu" >
-        <i class="fas fa-envelope"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://orcid.org/0000-0002-2732-1029" target="_blank" rel="noopener">
-        <i class="ai ai-orcid"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/files/CV_Nurfatima_Jandarova.pdf" >
-        <i class="ai ai-cv"></i>
-      </a>
-    </li>
-  
-</ul>
-
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-  </div>
-</article>
 
       
 

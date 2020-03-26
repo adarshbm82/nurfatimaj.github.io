@@ -34,14 +34,10 @@ Dataset source: [github repository of the Department of Civil Protection](https:
 ```{r message=FALSE}
 library(tidyverse)
 library(lubridate)
-library(sf)
-library(gganimate)
 
-data_file <- '~/Downloads/COVID-19/dati-regioni/dpc-covid19-ita-regioni.csv'
-shape_dsn <- '~/Downloads/italian-maps-shapefiles/italy-with-regions/'
+data_file <- 'COVID-19/dati-regioni/dpc-covid19-ita-regioni.csv'
 
 df <- read_csv(data_file)
-shape <- read_sf(dsn = shape_dsn)
 ```
 
 It is also helpful to reorder the regions based on north-south scale.
@@ -55,12 +51,6 @@ Since the hour information is useless, let's remove it
 
 ```{r}
 df <- df %>% mutate(date = date(data)) %>% select(-data)
-```
-
-Now, I need to convert the dataset into simple features collection supplying the `long` and `lat` as point coordinates.
-
-```{r}
-df_sf <- df %>% st_as_sf(coords = c('long', 'lat'), crs = 4326, agr = 'constant')
 ```
 
 And some settings for the plots
@@ -128,21 +118,81 @@ ggsave(filename = 'featured.png')
 ```
 
 ### Timeline on a map
+To view the timeline of death_rate on a map, I need to create the indicator first. There are some observations where both number of deaths and total cases are 0, resulting in NaN death rate. I substitute these with 0. 
 
-```{r message=FALSE, results='hide', warning=FALSE}
-ndays <- min(df$date) %--% max(df$date) / ddays(1) + 1
-map <- df_sf %>%
-  mutate(death_rate = deceduti/totale_casi) %>%
-  ggplot(.) +
-  geom_sf(data = shape, fill = NA) +
-  geom_sf(aes(color = death_rate*100, size = death_rate*100)) +
-  theme_void() +
-  labs(title = 'Date: {frame_time}', colour = 'Death rate', size = 'Death rate') +
-  scale_colour_distiller(palette = 'Spectral') +
-  transition_time(date)
-#animate(map, nframes = 30, renderer = gifski_renderer('map_png/map_anim.gif'))
-animate(map, nframes = ndays, fps = 30, renderer = file_renderer('map_png/', overwrite = TRUE))
-gifski::gifski(list.files('map_png/', full.names = 'TRUE'), gif_file = 'map_anim.gif')
+The code for interactive animated map is borrowed from 
+
+- [Using Leaflet with Shiny](https://rstudio.github.io/leaflet/shiny.html)
+- [Embedding a shiny app in blogdown](https://www.brettory.com/2018/02/embedding-a-shiny-app-in-blogdown/)
+
+```{r eval=FALSE}
+shinyApp(
+  bootstrapPage(
+    tags$style(type = "text/css", "html, body {width:100%;height:100%; background:rgb(255,255,255)}"),
+    leafletOutput("map", width = "100%", height = "100%"),
+    absolutePanel(top = 10, right = 10,
+                  sliderInput("range", "Date", 
+                              min = min(df$date), 
+                              max = max(df$date),
+                              value = max(df$date), 
+                              step = 1, 
+                              animate = TRUE), 
+                  selectInput("colors", "Color Scheme",
+                              #rownames(subset(brewer.pal.info, category %in% c("seq", "div")))
+                              c('Spectral', 'RdBu', 'Blues', 'Greens', 'Reds')),
+                  checkboxInput("legend", "Show legend", TRUE))), 
+  server <- function(input, output) {
+    #stuff in server
+    filteredData <- reactive({
+      df[df$date == input$range[1], ]
+    })
+    
+    # This reactive expression represents the palette function,
+    # which changes as the user makes selections in UI.
+    colorpal <- reactive({
+      colorNumeric(input$colors, df$death_rate)
+    })
+    
+    output$map <- renderLeaflet({
+      # Use leaflet() here, and only include aspects of the map that
+      # won't need to change dynamically (at least, not unless the
+      # entire map is being torn down and recreated).
+      leaflet(df) %>% addTiles() %>%
+        addProviderTiles(providers$CartoDB.Positron) %>% 
+        fitBounds(~min(long), ~min(lat), ~max(long), ~max(lat))
+    })
+    
+    # Incremental changes to the map (in this case, replacing the
+    # circles when a new color is chosen) should be performed in
+    # an observer. Each independent set of things that can change
+    # should be managed in its own observer.
+    observe({
+      pal <- colorpal()
+      
+      leafletProxy("map", data = filteredData()) %>%
+        clearMarkers() %>%
+        addCircleMarkers(lng = ~long, lat = ~lat, 
+                         radius = ~death_rate, 
+                         color = ~pal(death_rate), 
+                         popup = ~paste(death_rate))
+    })
+    
+    # Use a separate observer to recreate the legend as needed.
+    observe({
+      proxy <- leafletProxy("map", data = df)
+      
+      # Remove any existing legend, and only if the legend is
+      # enabled, create a new one.
+      proxy %>% clearControls()
+      if (input$legend) {
+        pal <- colorpal()
+        proxy %>% addLegend(position = "bottomright", pal = pal, values = ~death_rate)
+      }
+    })
+    
+  },
+  options = list(height = 500, width = '100%')
+)
 ```
 
-![](map_anim.gif)
+<iframe width="100%" height="500" src="https://nurfatimaj.shinyapps.io/shiny_leaflet_map/"></iframe>
