@@ -1,0 +1,93 @@
+---
+output: html_document
+runtime: shiny
+---
+
+```{r echo=FALSE, message=FALSE}
+library(tidyverse)
+library(lubridate)
+library(leaflet) # for interactive map
+library(shiny) # for interactive map
+library(RColorBrewer)
+
+data_file <- 'COVID-19/dati-regioni/dpc-covid19-ita-regioni.csv'
+
+df <- read_csv(data_file)
+df <- df %>% mutate(date = date(data)) %>% select(-data)
+df <- df %>% mutate(death_rate = deceduti/totale_casi*100, 
+                    death_rate = ifelse(totale_casi == 0, 0, death_rate))
+shinyApp(
+  bootstrapPage(
+    tags$style(type = "text/css", "html, body {width:100%;height:100%;} #input {background-color:rgba(255, 255, 255, 0.9)}"),
+    leafletOutput("map", width = "100%", height = "100%"),
+    absolutePanel(top = 10, right = 20,
+                  sliderInput("range", "Date", 
+                              min = min(df$date), 
+                              max = max(df$date),
+                              value = max(df$date), 
+                              step = 1, 
+                              animate = animationOptions(interval = 500)), 
+                  selectInput("colors", "Color Scheme",
+                              #rownames(subset(brewer.pal.info, category %in% c("seq", "div")))
+                              c('Spectral', 'RdBu', 'Blues', 'Greens', 'Reds')),
+                  checkboxInput("legend", "Show legend", TRUE), 
+                  id = 'input')), 
+  server <- function(input, output) {
+    #stuff in server
+    filteredData <- reactive({
+      df[df$date == input$range[1], ]
+    })
+    
+    # This reactive expression represents the palette function,
+    # which changes as the user makes selections in UI.
+    colorpal <- reactive({
+      colorNumeric(input$colors, -df$death_rate)
+    })
+    
+    output$map <- renderLeaflet({
+      # Use leaflet() here, and only include aspects of the map that
+      # won't need to change dynamically (at least, not unless the
+      # entire map is being torn down and recreated).
+      leaflet(df) %>% addTiles() %>%
+        addProviderTiles(providers$CartoDB.Positron) %>% 
+        fitBounds(~min(long), ~min(lat), ~max(long), ~max(lat))
+    })
+    
+    # Incremental changes to the map (in this case, replacing the
+    # circles when a new color is chosen) should be performed in
+    # an observer. Each independent set of things that can change
+    # should be managed in its own observer.
+    observe({
+      pal <- colorpal()
+      
+      leafletProxy("map", data = filteredData()) %>%
+        clearMarkers() %>%
+        addCircleMarkers(lng = ~long, lat = ~lat, 
+                         radius = ~death_rate, 
+                         color = ~pal(-death_rate), opacity = 1,  
+                         popup = ~paste(death_rate))
+    })
+    
+    # Use a separate observer to recreate the legend as needed.
+    observe({
+      proxy <- leafletProxy("map", data = df)
+      
+      # Remove any existing legend, and only if the legend is
+      # enabled, create a new one.
+      proxy %>% clearControls()
+      if (input$legend) {
+        pal <- colorpal()
+        proxy %>% addLegend(position = "bottomright", pal = pal, values = ~-death_rate, 
+                            labFormat = labelFormat(transform = function(x) -x), 
+                            title = 'Death Rate')
+      }
+    })
+    
+  },
+  options = list(height = 500, width = '100%')
+)
+```
+
+
+
+

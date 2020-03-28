@@ -27,7 +27,7 @@
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
 library(lubridate)
 
-data_file &amp;lt;- &amp;#39;COVID-19/dati-regioni/dpc-covid19-ita-regioni.csv&amp;#39;
+data_file &amp;lt;- &amp;#39;data/dati-regioni/dpc-covid19-ita-regioni.csv&amp;#39;
 
 df &amp;lt;- read_csv(data_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;It is also helpful to reorder the regions based on north-south scale.&lt;/p&gt;
@@ -176,7 +176,7 @@ myColourPalette &amp;lt;- c(&amp;#39;#67001f&amp;#39;,&amp;#39;#b2182b&amp;#39;,
   },
   options = list(height = 500, width = &amp;#39;100%&amp;#39;)
 )&lt;/code&gt;&lt;/pre&gt;
-&lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;https://nurfatimaj.shinyapps.io/shiny_leaflet_map/&#34;&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;https://nurfatimaj.shinyapps.io/covid-19/&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;

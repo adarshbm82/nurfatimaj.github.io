@@ -35,7 +35,7 @@ Dataset source: [github repository of the Department of Civil Protection](https:
 library(tidyverse)
 library(lubridate)
 
-data_file <- 'COVID-19/dati-regioni/dpc-covid19-ita-regioni.csv'
+data_file <- 'data/dati-regioni/dpc-covid19-ita-regioni.csv'
 
 df <- read_csv(data_file)
 ```
@@ -197,4 +197,5 @@ shinyApp(
 )
 ```
 
-<iframe width="100%" height="500" src="https://nurfatimaj.shinyapps.io/shiny_leaflet_map/"></iframe>
+<iframe width="100%" height="500" src="https://nurfatimaj.shinyapps.io/covid-19/"></iframe>
+
