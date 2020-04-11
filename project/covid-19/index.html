@@ -727,7 +727,7 @@
 
 <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 514px;">
   <div style="position: relative">
-    <img src="/project/covid-19/featured_hu16703c8b8895524a28e5aafe2503ec3f_156670_720x0_resize_lanczos_2.png" alt="" class="featured-image">
+    <img src="/project/covid-19/featured_hu7a742288f79d3031c83609a20de6256b_153081_720x0_resize_lanczos_2.png" alt="" class="featured-image">
     
   </div>
 </div>
@@ -769,7 +769,7 @@ myColourPalette &lt;- c(&#39;#67001f&#39;,&#39;#b2182b&#39;,&#39;#d6604d&#39;,&#
 <div id="testing-activity-and-new-cases" class="section level3">
 <h3>Testing activity and new cases</h3>
 <p>If we were able to test everyone in the population, the only thing we needed to do to get a sense of infection rate is to divide number of positive cases by the population. Unfortunately, there are not enough tests. The capacity to identify confirm cases is limited by the testing capacity; therefore, it helps to look at both testing and positive cases simultaneously, whether in absolute or relative terms.</p>
-<pre class="r"><code>df %&gt;% select(date, regions, tamponi, nuovi_attualmente_positivi) %&gt;%
+<pre class="r"><code>df %&gt;% select(date, regions, tamponi, nuovi_positivi) %&gt;%
   group_by(regions) %&gt;%
   arrange(date) %&gt;%
   mutate(new_tests = tamponi - lag(tamponi, 1)) %&gt;%
@@ -785,7 +785,7 @@ myColourPalette &lt;- c(&#39;#67001f&#39;,&#39;#b2182b&#39;,&#39;#d6604d&#39;,&#
 <pre><code>## Warning: Removed 1 row(s) containing missing values (geom_path).</code></pre>
 <p><img src="/project/covid-19/index_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 <p>If random subset of population was tested for the virus, then dividing the number of positive cases by the number of people tested would have also given a good statistic for infection rate.</p>
-<pre class="r"><code>df %&gt;% mutate(positive_share = totale_attualmente_positivi/tamponi) %&gt;%
+<pre class="r"><code>df %&gt;% mutate(positive_share = totale_positivi/tamponi) %&gt;%
   ggplot(., aes(x = date, y = positive_share*100, colour = &#39;Positive cases as a share of total tested&#39;)) +
   geom_point() + geom_line() +
   facet_wrap(~regions, scales = &#39;free_y&#39;) +
@@ -793,6 +793,11 @@ myColourPalette &lt;- c(&#39;#67001f&#39;,&#39;#b2182b&#39;,&#39;#d6604d&#39;,&#
   labs(x = &#39;Date&#39;, y = &#39;%&#39;)</code></pre>
 <pre><code>## Warning: Removed 15 rows containing missing values (geom_point).</code></pre>
 <p><img src="/project/covid-19/index_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<pre class="r"><code>df %&gt;% 
+  ggplot(., aes(x = date, y = nuovi_positivi, fill = regions)) + 
+  geom_bar(position = &#39;stack&#39;, stat = &#39;identity&#39;) + 
+  scale_fill_manual(values = myColourPalette)</code></pre>
+<p><img src="/project/covid-19/index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <p>Unfortunately, tests are unlikely to have been given randomly, giving rise to selection issues. When we see that positive cases are on the rise (even if divided by the total number of people tested), this could be that</p>
 <ul>
 <li>more people are getting infected, or</li>
@@ -808,7 +813,7 @@ myColourPalette &lt;- c(&#39;#67001f&#39;,&#39;#b2182b&#39;,&#39;#d6604d&#39;,&#
   labs(x = &#39;Date&#39;, y = &#39;%&#39;, colour = &#39;&#39;)</code></pre>
 <pre><code>## Warning: Removed 73 rows containing missing values (geom_point).</code></pre>
 <pre><code>## Warning: Removed 1 row(s) containing missing values (geom_path).</code></pre>
-<p><img src="/project/covid-19/index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p><img src="/project/covid-19/index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <pre class="r"><code>df %&gt;% group_by(regions) %&gt;% arrange(date) %&gt;%
   mutate(new_death = deceduti - lag(deceduti, 1)) %&gt;%
   ungroup() %&gt;%
@@ -816,7 +821,7 @@ myColourPalette &lt;- c(&#39;#67001f&#39;,&#39;#b2182b&#39;,&#39;#d6604d&#39;,&#
   scale_fill_manual(values = myColourPalette) +
   labs(x = &#39;Date&#39;, y = &#39;New death cases&#39;, fill = &#39;Regions&#39;)</code></pre>
 <pre><code>## Warning: Removed 21 rows containing missing values (position_stack).</code></pre>
-<p><img src="/project/covid-19/index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><img src="/project/covid-19/index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <pre class="r"><code>ggsave(filename = &#39;featured.png&#39;)</code></pre>
 <pre><code>## Saving 7 x 5 in image</code></pre>
 <pre><code>## Warning: Removed 21 rows containing missing values (position_stack).</code></pre>

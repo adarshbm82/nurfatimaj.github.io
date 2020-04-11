@@ -45,7 +45,8 @@
 #&#39;
 #&#39; @section1
 #&#39; comment 2
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to appear correctly in the documentation file: two comments under section 1 and one comment under section 2.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to appear correctly in the documentation file: two comments under section 1 and one comment under section 2.&lt;/p&gt;
 &lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;Now, I can just click on respective wiki post and see all relevant information: usage, argument types and accepted values, description, input and output files. No need to traverse the code to make sense of it. Just work on the actual task.&lt;/p&gt;</description>
     </item>
