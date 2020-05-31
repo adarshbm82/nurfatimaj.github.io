@@ -8,7 +8,7 @@
   </url>
   
   <url>
-    <loc>https://nurfatimaj.com/tags/automatic-cv/</loc>
+    <loc>https://nurfatimaj.com/tag/automatic-cv/</loc>
     <lastmod>2019-10-20T18:49:32+03:00</lastmod>
   </url>
   
@@ -18,18 +18,23 @@
   </url>
   
   <url>
-    <loc>https://nurfatimaj.com/tags/data-driven-website/</loc>
+    <loc>https://nurfatimaj.com/tag/data-driven-website/</loc>
     <lastmod>2019-10-20T18:49:32+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nurfatimaj.com/tags/hugo/</loc>
+    <loc>https://nurfatimaj.com/tag/hugo/</loc>
     <lastmod>2019-10-20T18:49:32+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nurfatimaj.com/tags/latex/</loc>
+    <loc>https://nurfatimaj.com/tag/latex/</loc>
     <lastmod>2019-10-20T18:49:32+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nurfatimaj.com/</loc>
+    <lastmod>2020-05-04T23:44:41+02:00</lastmod>
   </url>
   
   <url>
@@ -38,7 +43,7 @@
   </url>
   
   <url>
-    <loc>https://nurfatimaj.com/categories/tech-fun/</loc>
+    <loc>https://nurfatimaj.com/category/tech-fun/</loc>
     <lastmod>2019-10-20T18:49:32+03:00</lastmod>
   </url>
   
@@ -48,32 +53,32 @@
   </url>
   
   <url>
-    <loc>https://nurfatimaj.com/tags/bash-script/</loc>
+    <loc>https://nurfatimaj.com/tag/bash-script/</loc>
     <lastmod>2019-10-17T03:25:33+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nurfatimaj.com/tags/documentation/</loc>
+    <loc>https://nurfatimaj.com/tag/documentation/</loc>
     <lastmod>2019-10-17T03:25:33+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nurfatimaj.com/tags/git/</loc>
+    <loc>https://nurfatimaj.com/tag/git/</loc>
     <lastmod>2019-10-17T03:25:33+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nurfatimaj.com/tags/markdown/</loc>
+    <loc>https://nurfatimaj.com/tag/markdown/</loc>
     <lastmod>2019-10-17T03:25:33+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nurfatimaj.com/tags/software/</loc>
+    <loc>https://nurfatimaj.com/tag/software/</loc>
     <lastmod>2019-10-17T03:25:33+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nurfatimaj.com/tags/text-parsing/</loc>
+    <loc>https://nurfatimaj.com/tag/text-parsing/</loc>
     <lastmod>2019-10-17T03:25:33+02:00</lastmod>
   </url>
   
@@ -83,43 +88,23 @@
   </url>
   
   <url>
-    <loc>https://nurfatimaj.com/</loc>
-    <lastmod>2019-10-17T09:59:26+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nurfatimaj.com/authors/admin/</loc>
-    <lastmod>2019-10-21T11:31:05+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nurfatimaj.com/authors/aichino/</loc>
+    <loc>https://nurfatimaj.com/publication-type/4/</loc>
     <lastmod>2019-10-17T11:28:20+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nurfatimaj.com/authors/arustichini/</loc>
-    <lastmod>2019-10-17T11:28:20+02:00</lastmod>
+    <loc>https://nurfatimaj.com/author/aldo-rustichini/</loc>
+    <lastmod>2020-05-04T23:44:41+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nurfatimaj.com/authors/gzanella/</loc>
-    <lastmod>2019-10-17T11:28:20+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nurfatimaj.com/authors/jlreuter/</loc>
-    <lastmod>2019-10-17T11:28:20+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nurfatimaj.com/publication_types/4/</loc>
-    <lastmod>2019-10-17T11:28:20+02:00</lastmod>
+    <loc>https://nurfatimaj.com/author/andrea-ichino/</loc>
+    <lastmod>2020-05-04T23:44:41+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://nurfatimaj.com/authors/</loc>
-    <lastmod>2019-10-21T11:31:05+03:00</lastmod>
+    <lastmod>2020-05-04T23:44:41+02:00</lastmod>
   </url>
   
   <url>
@@ -128,8 +113,28 @@
   </url>
   
   <url>
+    <loc>https://nurfatimaj.com/author/giulio-zanella/</loc>
+    <lastmod>2020-05-04T23:44:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nurfatimaj.com/author/hanno-kase/</loc>
+    <lastmod>2020-05-04T23:44:41+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nurfatimaj.com/publication/work-in-progress/measurement-edu-uk/</loc>
     <lastmod>2019-10-17T11:28:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nurfatimaj.com/author/johanna-reuter/</loc>
+    <lastmod>2020-05-04T23:44:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nurfatimaj.com/author/nurfatima-jandarova/</loc>
+    <lastmod>2020-05-04T23:44:41+02:00</lastmod>
   </url>
   
   <url>

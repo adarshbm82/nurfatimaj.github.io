@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nurfatima Jandarova</title>
+    <link>https://nurfatimaj.com/author/nurfatima-jandarova/</link>
+      <atom:link href="https://nurfatimaj.com/author/nurfatima-jandarova/index.xml" rel="self" type="application/rss+xml" />
+    <description>Nurfatima Jandarova</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>https://nurfatimaj.com/author/nurfatima-jandarova/avatar_hub78a8f85c0b4d7dc9a60fdc4c2478904_630585_270x270_fill_q90_lanczos_center.jpg</url>
+      <title>Nurfatima Jandarova</title>
+      <link>https://nurfatimaj.com/author/nurfatima-jandarova/</link>
+    </image>
+    
+    <item>
+      <title>Genetic Endowment and Sorting into University Education</title>
+      <link>https://nurfatimaj.com/publication/work-in-progress/uni-sorting-genetics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nurfatimaj.com/publication/work-in-progress/uni-sorting-genetics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improving UK university education rate statistic using multiple imputation</title>
+      <link>https://nurfatimaj.com/publication/work-in-progress/measurement-edu-uk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nurfatimaj.com/publication/work-in-progress/measurement-edu-uk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unemployment and educational choices</title>
+      <link>https://nurfatimaj.com/publication/work-in-progress/edu-unemp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nurfatimaj.com/publication/work-in-progress/edu-unemp/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
