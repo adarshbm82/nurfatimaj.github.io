@@ -57,7 +57,7 @@ creating your own &amp;ldquo;widget&amp;rdquo;. Unlike the previous theme, this 
 Initially, I thought of printing to pdf before sending the data to the webpage. That is, I build website on my computer, send the generated page to printer, save it as pdf, add the link to this pdf on
 the home and send the website to GitHub. To automate this process, I used &lt;code&gt;chrome&lt;/code&gt; command line interface, the worst solution I have tried (except for the idea of two separate files).
 The thing with &lt;code&gt;chrome&lt;/code&gt; CLI is that it doesn&amp;rsquo;t work properly with chrome running in the background (and even without). The resulting pdf file always had different levels of white overlay.&lt;/p&gt;
-&lt;p&gt;I was very unhappy about this. And was thinking &amp;ldquo;Oh, if only there was a way to let LaTeX generate this poor pdf!&amp;quot;. But the problem with this is that I don&amp;rsquo;t know how to access website information
+&lt;p&gt;I was very unhappy about this. And was thinking &amp;ldquo;Oh, if only there was a way to let LaTeX generate this poor pdf!&amp;rdquo;. But the problem with this is that I don&amp;rsquo;t know how to access website information
 from within LaTeX.&lt;/p&gt;
 &lt;p&gt;The solution came to me the same way as the chemical table came to Mendeleev - in the dream. The idea - and current solution - is to have an auxiliary html page for CV with LaTeX code.
 For example, instead of &lt;code&gt;&amp;lt;h2&amp;gt;Contact Information&amp;lt;/h2&amp;gt;&lt;/code&gt; for section names I put &lt;code&gt;\section*{Contact Information}&lt;/code&gt; into the template. Then, I run Python script to extract the LaTeX codes

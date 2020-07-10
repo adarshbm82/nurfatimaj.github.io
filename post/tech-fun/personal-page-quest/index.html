@@ -776,7 +776,7 @@ creating your own &ldquo;widget&rdquo;. Unlike the previous theme, this one has 
 Initially, I thought of printing to pdf before sending the data to the webpage. That is, I build website on my computer, send the generated page to printer, save it as pdf, add the link to this pdf on
 the home and send the website to GitHub. To automate this process, I used <code>chrome</code> command line interface, the worst solution I have tried (except for the idea of two separate files).
 The thing with <code>chrome</code> CLI is that it doesn&rsquo;t work properly with chrome running in the background (and even without). The resulting pdf file always had different levels of white overlay.</p>
-<p>I was very unhappy about this. And was thinking &ldquo;Oh, if only there was a way to let LaTeX generate this poor pdf!&quot;. But the problem with this is that I don&rsquo;t know how to access website information
+<p>I was very unhappy about this. And was thinking &ldquo;Oh, if only there was a way to let LaTeX generate this poor pdf!&rdquo;. But the problem with this is that I don&rsquo;t know how to access website information
 from within LaTeX.</p>
 <p>The solution came to me the same way as the chemical table came to Mendeleev - in the dream. The idea - and current solution - is to have an auxiliary html page for CV with LaTeX code.
 For example, instead of <code>&lt;h2&gt;Contact Information&lt;/h2&gt;</code> for section names I put <code>\section*{Contact Information}</code> into the template. Then, I run Python script to extract the LaTeX codes
@@ -798,9 +798,9 @@ and supply them to <code>pdflatex</code> to generate a good-looking pdf. This is
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tag/automatic-cv/">automatic CV</a>
-  
   <a class="badge badge-light" href="/tag/data-driven-website/">data-driven website</a>
+  
+  <a class="badge badge-light" href="/tag/automatic-cv/">automatic CV</a>
   
   <a class="badge badge-light" href="/tag/hugo/">Hugo</a>
   
