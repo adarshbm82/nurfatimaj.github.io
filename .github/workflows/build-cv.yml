@@ -43,7 +43,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "github-actions"
-          git add /files/*.tex /files/*.pdf
+          git add files/*.tex files/*.pdf
           git commit -m "Compiled CV to .pdf"
       
       - name: Push .tex and .pdf to repository
