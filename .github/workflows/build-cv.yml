@@ -34,7 +34,7 @@ jobs:
         run: python scripts/CV_extract_latex.py
       
       - name: Install texlive
-        run: sudo apt install texlive-latex-base texlive-latex-extra --no-install-recommends
+        run: sudo apt install texlive-latex-base texlive-latex-extra texlive-fonts-recommended --no-install-recommends
       
       - name: Compile LaTeX document
         run: pdflatex -synctex=1 -interaction=nonstopmode files/CV_Nurfatima_Jandarova.tex 
