@@ -38,3 +38,17 @@ jobs:
       
       - name: Compile LaTeX document
         run: pdflatex -synctex=1 -interaction=nonstopmode files/CV_Nurfatima_Jandarova.tex 
+        
+      - name: Commit .tex and .pdf to repository
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions"
+          git add /files/*.tex /files/*.pdf
+          git commit -m "Compiled CV to .pdf"
+      
+      - name: Push .tex and .pdf to repository
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
+          
