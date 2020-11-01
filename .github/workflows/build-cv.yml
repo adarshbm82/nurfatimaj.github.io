@@ -33,9 +33,22 @@ jobs:
       - name: Execute Python script
         run: python scripts/CV_extract_latex.py
       
+      - name: Install texlive
+        run: sudo apt install texlive-latex-base texlive-latex-extra texlive-fonts-recommended --no-install-recommends
+      
       - name: Compile LaTeX document
-        uses: dante-ev/latex-action@master
+        run: pdflatex -synctex=1 -interaction=nonstopmode -output-directory='files/' files/CV_Nurfatima_Jandarova.tex
+        
+      - name: Commit .tex and .pdf to repository
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions"
+          git add files/CV_Nurfatima_Jandarova.tex files/CV_Nurfatima_Jandarova.pdf
+          git commit -m "Compiled CV to .pdf"
+      
+      - name: Push .tex and .pdf to repository
+        uses: ad-m/github-push-action@master
         with:
-          root_file: files/CV_Nurfatima_Jandarova.tex
-          working_directory: files
-  
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
+          
