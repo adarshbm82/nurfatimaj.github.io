@@ -33,9 +33,8 @@ jobs:
       - name: Execute Python script
         run: python scripts/CV_extract_latex.py
       
+      - name: Install texlive
+        run: sudo apt install texlive-latex-base
+      
       - name: Compile LaTeX document
-        uses: dante-ev/latex-action@master
-        with:
-          root_file: files/CV_Nurfatima_Jandarova.tex
-          working_directory: files
-  
+        run: pdflatex -synctex=1 -interaction=nonstopmode files/CV_Nurfatima_Jandarova.tex 
