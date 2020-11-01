@@ -37,7 +37,7 @@ jobs:
         run: sudo apt install texlive-latex-base texlive-latex-extra texlive-fonts-recommended --no-install-recommends
       
       - name: Compile LaTeX document
-        run: pdflatex -synctex=1 -interaction=nonstopmode -output-directory='files/' files/CV_Nurfatima_Jandarova.tex
+        run: pdflatex -synctex=1 -interaction=nonstopmode -output-directory='files' files/CV_Nurfatima_Jandarova.tex
         
       - name: Commit .tex and .pdf to repository
         run: |
