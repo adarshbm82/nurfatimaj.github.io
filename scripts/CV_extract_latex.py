@@ -28,7 +28,8 @@ for htmlesc, latexesc in escape_characters.items():
 
 # Remove old .tex if exists
 if os.path.exists('files/CV_Nurfatima_Jandarova.tex'):
-    os.remove('files/CV_Nurfatima_Jandarova.tex')    
+    os.remove('files/CV_Nurfatima_Jandarova.tex')
+    print(os.path.exists('files/CV_Nurfatima_Jandarova.tex'))
     
 # Write the output to tex file
 file = open('files/CV_Nurfatima_Jandarova.tex', 'w')
