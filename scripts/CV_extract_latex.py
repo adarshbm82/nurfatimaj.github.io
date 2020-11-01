@@ -7,6 +7,7 @@ Created on Sun Oct 20 14:39:42 2019
 """
 
 from bs4 import BeautifulSoup
+import os
 
 input = "print/index.html"
 
@@ -24,6 +25,11 @@ CV_tex_clean = CV_tex
 for htmlesc, latexesc in escape_characters.items():
     print('Substitute', htmlesc, 'to', latexesc)
     CV_tex_clean = CV_tex_clean.replace(htmlesc, latexesc)
+
+# Remove old .tex if exists
+if os.path.exists('files/CV_Nurfatima_Jandarova.tex'):
+    os.remove('files/CV_Nurfatima_Jandarova.tex')    
+    
 # Write the output to tex file
 file = open('files/CV_Nurfatima_Jandarova.tex', 'w')
 file.write(CV_tex_clean)
