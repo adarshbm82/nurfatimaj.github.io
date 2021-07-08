@@ -5,9 +5,9 @@
     <link>https://nurfatimaj.com/tag/software/</link>
       <atom:link href="https://nurfatimaj.com/tag/software/index.xml" rel="self" type="application/rss+xml" />
     <description>software</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 17 Aug 2019 16:33:42 +0600</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Nurfatima Jandarova</copyright><lastBuildDate>Sat, 17 Aug 2019 16:33:42 +0600</lastBuildDate>
     <image>
-      <url>https://nurfatimaj.com/images/icon_hu0278c7f29914ab484e878f9ad16081c2_19539_512x512_fill_lanczos_center_2.png</url>
+      <url>https://nurfatimaj.com/media/icon_hu0278c7f29914ab484e878f9ad16081c2_19539_512x512_fill_lanczos_center_2.png</url>
       <title>software</title>
       <link>https://nurfatimaj.com/tag/software/</link>
     </image>
@@ -26,8 +26,7 @@
 &lt;h3 id=&#34;special-comment&#34;&gt;Special comment&lt;/h3&gt;
 &lt;p&gt;Not all comments are meant to be inside a documentation file. Detecting the relevant code blocks is solved by including a special comment block (&lt;code&gt;#&#39;&lt;/code&gt; or &lt;code&gt;*&#39;&lt;/code&gt; for Stata) which  I have borrowed from R. So all lines that start with the special sign will be part of the documentation file.&lt;/p&gt;
 &lt;h3 id=&#34;parsing-and-outputing&#34;&gt;Parsing and outputing&lt;/h3&gt;
-&lt;p&gt;After detecting the special comment block, the script is ridiculously simple. Basic idea is to strip away the special comment sign and simply copy the rest of the text into a markdown file. Of course, for this to work, the documentation comment block should follow a simple 
-&lt;a href=&#34;https://www.markdownguide.org/cheat-sheet&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;markdown syntax&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After detecting the special comment block, the script is ridiculously simple. Basic idea is to strip away the special comment sign and simply copy the rest of the text into a markdown file. Of course, for this to work, the documentation comment block should follow a simple &lt;a href=&#34;https://www.markdownguide.org/cheat-sheet&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;markdown syntax&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;My documentation script applies additional rules to certain lines, which, again borrowing from R, are identified with special tags (for example, &lt;code&gt;@title&lt;/code&gt; for document title). These rules work by identifying if a line starts with one of the special tags, stripping the tag away and outputing the rest of the text in a desired way. For example, when a line starts with &lt;code&gt;@title&lt;/code&gt;, I insert to the title text hyperlink to the actual code file. The linking is possible because I am using git version control with a remote repository.&lt;/p&gt;
 &lt;p&gt;To a more technically inclined reader, all that my script does here is continuously apply &lt;code&gt;sed&lt;/code&gt; to the extracted lines and &lt;code&gt;echo&lt;/code&gt; the output into a markdown file.&lt;/p&gt;
 &lt;h3 id=&#34;input&#34;&gt;Input&lt;/h3&gt;
