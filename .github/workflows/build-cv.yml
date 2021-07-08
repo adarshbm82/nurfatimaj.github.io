@@ -45,7 +45,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "github-actions"
-          git add uploads/CV_Nurfatima_Jandarova.tex files/CV_Nurfatima_Jandarova.pdf
+          git add uploads/CV_Nurfatima_Jandarova.tex uploads/CV_Nurfatima_Jandarova.pdf
           git commit -m "Compiled CV to .pdf"
       
       - name: Push .tex and .pdf to repository
