@@ -153,5 +153,20 @@ and supply them to &lt;code&gt;pdflatex&lt;/code&gt; to generate a good-looking 
       <description></description>
     </item>
     
+    <item>
+      <title>Privacy</title>
+      <link>https://nurfatimaj.com/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nurfatimaj.com/privacy/</guid>
+      <description>&lt;p&gt;This website uses cookies to gather analytical information processed by the Google Analytics 4. The analytical information concerns page views only. As part of the report, I can see aggregated statistics about&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;name of pages visited,&lt;/li&gt;
+&lt;li&gt;country from where pages were visited,&lt;/li&gt;
+&lt;li&gt;whether a visit came from external links, or by directly typing the address.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The cookie consent is opt-in type. This means that all of the above information is only collected, if a user has specifically given consent for data collection.&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
